@@ -1,0 +1,18 @@
+{
+  "name": "animate-styled",
+  "version": "1.1.0",
+  "description": "library for animations CSS in react with styled-components",
+  "main": "index.js",
+  "author": "Carlos Manotas <carlosmanotas@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CarlosManotas/animate-styled.git"
+  },"bugs": {
+    "url": "https://github.com/CarlosManotas/animate-styled.git/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "react": "^15.6.2",
+    "styled-components": "^2.1.2"
+  }
+}
