@@ -36,7 +36,7 @@ render(){
 ## Propiedades
 
 | Nombre `props` | Default | Type | Values |
-|----------------------------------|
+|-----------------|---------|-------|----------|
 | name | flash | Object | nombre de las animaciones |
 | duration | 2s | String |  1s, 300ms... |
 | timingFunction | linear | String | ease, ease-in, ease-out, ease-in-out, linear, step-start, step-end |
@@ -51,7 +51,7 @@ render(){
 ## Nombre de las Animaciones
 
 | ﻿Name | Use |
-|--------------------|
+|---------------------|---------------------------|
 | bounce | `name={bounce}` |
 | flash | `name={flash}` |
 | pulse |`name={pulse}` |
