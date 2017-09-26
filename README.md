@@ -1,25 +1,26 @@
 # AnimateStyled
 
-*pequeño aporte para los que trabajamos con react y styled-components*
+*small contribution for those who work with react and styled-components*
 
-`AnimateStyled` es tan solo una librería basada en el gran trabajo hecho por la gente de [animate.css](https://github.com/daneden/animate.css) llevado al stack de [`react`](https://facebook.github.io/react/) y [`styled-components`](https://www.styled-components.com/).
+`AnimateStyled` is just a library based on the great work done by the people of [animate.css](https://github.com/daneden/animate.css) led to the stack of
+ [`react`](https://facebook.github.io/react/) and [`styled-components`](https://www.styled-components.com/).
 
-## Instalación
+## Installation
 
-via yarn, solo sigue estos simples comandos:
+via yarn, just follow these simple commands:
 
 ```bash
 $ yarn add animate-styled
 ```
-o via npm:
+or via npm:
 
 ```bash
 $ npm install animate-styled --save
 ```
 
-## Uso basico
+## Basic use
 
- importar en tu archivo `js`
+ import in your file `js`
 
 ```javascript
 ...
@@ -33,11 +34,11 @@ render(){
   )
 }
 ```
-## Propiedades
+## Properties
 
-| Nombre `props` | Default | Type | Values |
+| Name `props` | Default | Type | Values |
 |-----------------|---------|-------|----------|
-| name | flash | Object | nombre de las animaciones |
+| name | flash | Object | names of animations |
 | duration | 2s | String |  1s, 300ms... |
 | timingFunction | linear | String | ease, ease-in, ease-out, ease-in-out, linear, step-start, step-end |
 | delay | 0s | String | 1s, 300ms... |
@@ -48,7 +49,7 @@ render(){
 | transformOrigin | center | String | center, 50%, top bottom, 10% 80% ...|
 | backfaceVisibility | hidden | String | hidden, visible |
 
-## Nombre de las Animaciones
+## Names of animations
 
 | ﻿Name | Use |
 |---------------------|---------------------------|
@@ -130,7 +131,7 @@ render(){
 | slideOutRight |`name={slideOutRight}` |
 | slideOutUp |`name={slideOutUp}` |
 
-## Importar varias animaciones
+## Import multiple animations
 ```javascript
 import AnimateStyled,{ rollIn , zoomOut , slideOutUp} from 'animate-styled';
 ...
@@ -138,10 +139,10 @@ render(){
   return(
     <div>
       <AnimateStyled name={rollIn}>
-        <h1>Mi contenido</h1>
+        <h1>My Content</h1>
       </AnimateStyled>
       <AnimateStyled name={zoomOut}>
-        <p>Mi contenido</p>
+        <p>My Content</p>
       </AnimateStyled>
       <AnimateStyled name={slideOutUp}>
         <img src='image/logo.png'/>
@@ -150,7 +151,7 @@ render(){
   )
 }
 ```
-## Usando todas las Propiedades
+## Using All Properties
 ```javascript
 
    <AnimateStyled
@@ -170,8 +171,8 @@ render(){
   </AnimateStyled>
 
 ```
-## Otros usos
-se puede usar solo la animacion sin el contenedor dentro de tus archivos con `styled-components`
+## Other uses
+you can only use the animation without the container inside your files with `styled-components`
 ```javascript
 import styled from 'styled-components';
 import { rotateOutDownRight } from 'animate-styled';
@@ -182,7 +183,7 @@ const CustomDiv = styled.div`
 export default () => <CustomDiv>soy custom</CustomDiv>
 
 ```
-Anidaciones
+Nesting
 ```javascript
 <AnimateStyled name={flip}>
   <AnimateStyled
