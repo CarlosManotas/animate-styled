@@ -1157,15 +1157,38 @@ export const zoomOutUp = keyframes`
 `
 
 const AnimationFlow =styled.div`
-  animation-name: ${props=>props.name?props.name:flash};
-  animation-duration: ${props=>props.duration?props.duration:'2s'};
-  animation-timing-function: ${props=>props.timingFunction?props.timingFunction:'linear'};
-  animation-delay: ${props=>props.delay?props.delay:'0s'};
-  animation-iteration-count: ${props=>props.iterationCount?props.iterationCount:'infinite'};
-  animation-direction: ${props=>props.direction?props.direction:'normal'};
-  animation-fill-mode: ${props=>props.fillMode?props.fillMode:'none'};
-  animation-play-state: ${props=>props.playState?props.playState:'running'};
-  transform-origin: ${props=>props.transformOrigin?props.transformOrigin:'center'};
-  backface-visibility: ${props=>props.backfaceVisibility?props.backfaceVisibility:'hidden'}
+  animation-name: ${props=>props.name};
+  animation-duration: ${props=>props.duration};
+  animation-timing-function: ${props=>props.timingFunction};
+  animation-delay: ${props=>props.delay};
+  animation-iteration-count: ${props=>props.iterationCount};
+  animation-direction: ${props=>props.direction};
+  animation-fill-mode: ${props=>props.fillMode};
+  animation-play-state: ${props=>props.playState};
+  transform-origin: ${props=>props.transformOrigin};
+  backface-visibility: ${props=>props.backfaceVisibility};
+  opacity: ${props=>props.opacity}
 `
-export default (props) => <AnimationFlow {...props} >{props.children}</AnimationFlow>
+
+export default class AnimateStyled extends React.Component{
+  constructor(props) {
+    super(props);
+  }
+  render(){
+    return <AnimationFlow {...this.props} >{this.props.children}</AnimationFlow>
+  }
+}
+
+AnimateStyled.defaultProps = {
+  name: flash,
+  duration: '2s',
+  timingFunction: 'linear',
+  delay: '0s',
+  iterationCount: 'infinite',
+  direction: 'normal',
+  fillMode: 'none',
+  playState: 'running',
+  transformOrigin: 'center',
+  backfaceVisibility: 'hidden',
+  opacity: 1,
+}

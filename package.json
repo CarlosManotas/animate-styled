@@ -1,6 +1,6 @@
 {
   "name": "animate-styled",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "library for animations CSS in react with styled-components",
   "main": "index.js",
   "author": "Carlos Manotas <carlosmanotas@gmail.com>",

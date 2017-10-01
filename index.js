@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.zoomOutUp = exports.zoomOutRight = exports.zoomOutLeft = exports.zoomOutDown = exports.zoomOut = exports.zoomInUp = exports.zoomInRight = exports.zoomInLeft = exports.zoomInDown = exports.zoomIn = exports.rollOut = exports.rollIn = exports.jackInTheBox = exports.hinge = exports.slideOutUp = exports.slideOutRight = exports.slideOutLeft = exports.slideOutDown = exports.slideInUp = exports.slideInRight = exports.slideInLeft = exports.slideInDown = exports.rotateOutUpRight = exports.rotateOutUpLeft = exports.rotateOutDownRight = exports.rotateOutDownLeft = exports.rotateOut = exports.rotateInUpRight = exports.rotateInUpLeft = exports.rotateInDownRight = exports.rotateInDownLeft = exports.rotateIn = exports.lightSpeedOut = exports.lightSpeedIn = exports.flipOutY = exports.flipOutX = exports.flipInY = exports.flipInX = exports.flip = exports.fadeOutUpBig = exports.fadeOutUp = exports.fadeOutRightBig = exports.fadeOutRight = exports.fadeOutLeftBig = exports.fadeOutLeft = exports.fadeOutDownBig = exports.fadeOutDown = exports.fadeOut = exports.fadeInUpBig = exports.fadeInUp = exports.fadeInRightBig = exports.fadeInRight = exports.fadeInLeftBig = exports.fadeInLeft = exports.fadeInDownBig = exports.fadeInDown = exports.fadeIn = exports.bounceOutUp = exports.bounceOutRight = exports.bounceOutLeft = exports.bounceOutDown = exports.bounceOut = exports.bounceInUp = exports.bounceInRight = exports.bounceInLeft = exports.bounceInDown = exports.bounceIn = exports.wobble = exports.tada = exports.swing = exports.shake = exports.rubberBand = exports.pulse = exports.jello = exports.headShake = exports.flash = exports.bounce = undefined;
 
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
 var _templateObject = _taggedTemplateLiteral(['\n  from, 20%, 53%, 80%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n    transform: translate3d(0,0,0);\n  }\n\n  40%, 43% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, -4px, 0);\n  }\n'], ['\n  from, 20%, 53%, 80%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n    transform: translate3d(0,0,0);\n  }\n\n  40%, 43% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, -4px, 0);\n  }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  from, 50%, to {\n    opacity: 1;\n  }\n\n  25%, 75% {\n    opacity: 0;\n  }\n'], ['\n  from, 50%, to {\n    opacity: 1;\n  }\n\n  25%, 75% {\n    opacity: 0;\n  }\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n  0% {\n    transform: translateX(0);\n  }\n\n  6.5% {\n    transform: translateX(-6px) rotateY(-9deg);\n  }\n\n  18.5% {\n    transform: translateX(5px) rotateY(7deg);\n  }\n\n  31.5% {\n    transform: translateX(-3px) rotateY(-5deg);\n  }\n\n  43.5% {\n    transform: translateX(2px) rotateY(3deg);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n'], ['\n  0% {\n    transform: translateX(0);\n  }\n\n  6.5% {\n    transform: translateX(-6px) rotateY(-9deg);\n  }\n\n  18.5% {\n    transform: translateX(5px) rotateY(7deg);\n  }\n\n  31.5% {\n    transform: translateX(-3px) rotateY(-5deg);\n  }\n\n  43.5% {\n    transform: translateX(2px) rotateY(3deg);\n  }\n\n  50% {\n    transform: translateX(0);\n  }\n']),
@@ -82,7 +84,7 @@ var _templateObject = _taggedTemplateLiteral(['\n  from, 20%, 53%, 80%, to {\n  
     _templateObject75 = _taggedTemplateLiteral(['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(.1) translate3d(-2000px, 0, 0);\n    transform-origin: left center;\n  }\n'], ['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(.1) translate3d(-2000px, 0, 0);\n    transform-origin: left center;\n  }\n']),
     _templateObject76 = _taggedTemplateLiteral(['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(.1) translate3d(2000px, 0, 0);\n    transform-origin: right center;\n  }\n'], ['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(.1) translate3d(2000px, 0, 0);\n    transform-origin: right center;\n  }\n']),
     _templateObject77 = _taggedTemplateLiteral(['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);\n    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);\n    transform-origin: center bottom;\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);\n  }\n'], ['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);\n    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);\n    transform-origin: center bottom;\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);\n  }\n']),
-    _templateObject78 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n  animation-duration: ', ';\n  animation-timing-function: ', ';\n  animation-delay: ', ';\n  animation-iteration-count: ', ';\n  animation-direction: ', ';\n  animation-fill-mode: ', ';\n  animation-play-state: ', ';\n  transform-origin: ', ';\n  backface-visibility: ', '\n'], ['\n  animation-name: ', ';\n  animation-duration: ', ';\n  animation-timing-function: ', ';\n  animation-delay: ', ';\n  animation-iteration-count: ', ';\n  animation-direction: ', ';\n  animation-fill-mode: ', ';\n  animation-play-state: ', ';\n  transform-origin: ', ';\n  backface-visibility: ', '\n']);
+    _templateObject78 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n  animation-duration: ', ';\n  animation-timing-function: ', ';\n  animation-delay: ', ';\n  animation-iteration-count: ', ';\n  animation-direction: ', ';\n  animation-fill-mode: ', ';\n  animation-play-state: ', ';\n  transform-origin: ', ';\n  backface-visibility: ', ';\n  opacity: ', '\n'], ['\n  animation-name: ', ';\n  animation-duration: ', ';\n  animation-timing-function: ', ';\n  animation-delay: ', ';\n  animation-iteration-count: ', ';\n  animation-direction: ', ';\n  animation-fill-mode: ', ';\n  animation-play-state: ', ';\n  transform-origin: ', ';\n  backface-visibility: ', ';\n  opacity: ', '\n']);
 
 var _styledComponents = require('styled-components');
 
@@ -93,6 +95,12 @@ var _react = require('react');
 var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
@@ -193,31 +201,65 @@ var zoomOutRight = exports.zoomOutRight = (0, _styledComponents.keyframes)(_temp
 var zoomOutUp = exports.zoomOutUp = (0, _styledComponents.keyframes)(_templateObject77);
 
 var AnimationFlow = _styledComponents2.default.div(_templateObject78, function (props) {
-  return props.name ? props.name : flash;
+  return props.name;
 }, function (props) {
-  return props.duration ? props.duration : '2s';
+  return props.duration;
 }, function (props) {
-  return props.timingFunction ? props.timingFunction : 'linear';
+  return props.timingFunction;
 }, function (props) {
-  return props.delay ? props.delay : '0s';
+  return props.delay;
 }, function (props) {
-  return props.iterationCount ? props.iterationCount : 'infinite';
+  return props.iterationCount;
 }, function (props) {
-  return props.direction ? props.direction : 'normal';
+  return props.direction;
 }, function (props) {
-  return props.fillMode ? props.fillMode : 'none';
+  return props.fillMode;
 }, function (props) {
-  return props.playState ? props.playState : 'running';
+  return props.playState;
 }, function (props) {
-  return props.transformOrigin ? props.transformOrigin : 'center';
+  return props.transformOrigin;
 }, function (props) {
-  return props.backfaceVisibility ? props.backfaceVisibility : 'hidden';
+  return props.backfaceVisibility;
+}, function (props) {
+  return props.opacity;
 });
 
-exports.default = function (props) {
-  return _react2.default.createElement(
-    AnimationFlow,
-    props,
-    props.children
-  );
+var AnimateStyled = function (_React$Component) {
+  _inherits(AnimateStyled, _React$Component);
+
+  function AnimateStyled(props) {
+    _classCallCheck(this, AnimateStyled);
+
+    return _possibleConstructorReturn(this, (AnimateStyled.__proto__ || Object.getPrototypeOf(AnimateStyled)).call(this, props));
+  }
+
+  _createClass(AnimateStyled, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        AnimationFlow,
+        this.props,
+        this.props.children
+      );
+    }
+  }]);
+
+  return AnimateStyled;
+}(_react2.default.Component);
+
+exports.default = AnimateStyled;
+
+
+AnimateStyled.defaultProps = {
+  name: flash,
+  duration: '2s',
+  timingFunction: 'linear',
+  delay: '0s',
+  iterationCount: 'infinite',
+  direction: 'normal',
+  fillMode: 'none',
+  playState: 'running',
+  transformOrigin: 'center',
+  backfaceVisibility: 'hidden',
+  opacity: 1
 };
