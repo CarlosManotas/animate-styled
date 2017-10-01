@@ -48,6 +48,7 @@ render(){
 | playState | running | String | running, paused |
 | transformOrigin | center | String | center, 50%, top bottom, 10% 80% ...|
 | backfaceVisibility | hidden | String | hidden, visible |
+| opacity | 0 | String | 0 -> 1 |
 
 ## Names of animations
 
