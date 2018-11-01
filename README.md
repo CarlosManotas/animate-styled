@@ -51,9 +51,10 @@ render(){
 | opacity | 0 | String | 0 -> 1 |
 
 ## Names of animations
+> For test all animation click [here]("https://carlosmanotas.github.io/animate-styled")
 
 | ﻿Name | Use |
-|---------------------|---------------------------|
+|--------|-------------|
 | bounce | `name="bounce"` |
 | flash | `name="flash"` |
 | pulse |`name="pulse"` |
@@ -155,21 +156,20 @@ render(){
 ## Using All Properties
 ```javascript
 
-   <AnimateStyled
-      name="flip"
-      duration="600ms"
-      timingFunction="ease-in-out"
-      delay="200ms"
-      iterationCount={3}
-      direction="alternate"
-      fillMode="forwards"
-      playState="running"
-      transformOrigin="center top"
-      backfaceVisibility="visible" >
-
-      {children}
-
-  </AnimateStyled>
+<AnimateStyled
+  name="flip"
+  duration="600ms"
+  timingFunction="ease-in-out"
+  delay="200ms"
+  iterationCount={3}
+  direction="alternate"
+  fillMode="forwards"
+  playState="running"
+  transformOrigin="center top"
+  backfaceVisibility="visible"
+>
+  {children}
+</AnimateStyled>
 
 ```
 ## Other uses

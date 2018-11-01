@@ -2,3 +2,7 @@
 node_modules
 yarn.lock
 package-lock.json
+.cache
+.storybook
+stories
+storybook-static
