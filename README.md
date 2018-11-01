@@ -51,7 +51,7 @@ render(){
 | opacity | 0 | String | 0 -> 1 |
 
 ## Names of animations
-> For test all animation click [here](https://carlosmanotas.github.io/animate-styled/)
+For test all animation click [here](https://carlosmanotas.github.io/animate-styled/)
 
 | ﻿Name | Use |
 |--------|-------------|
