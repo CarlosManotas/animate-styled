@@ -3,9 +3,6 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.zoomOutUp = exports.zoomOutRight = exports.zoomOutLeft = exports.zoomOutDown = exports.zoomOut = exports.zoomInUp = exports.zoomInRight = exports.zoomInLeft = exports.zoomInDown = exports.zoomIn = exports.rollOut = exports.rollIn = exports.jackInTheBox = exports.hinge = exports.slideOutUp = exports.slideOutRight = exports.slideOutLeft = exports.slideOutDown = exports.slideInUp = exports.slideInRight = exports.slideInLeft = exports.slideInDown = exports.rotateOutUpRight = exports.rotateOutUpLeft = exports.rotateOutDownRight = exports.rotateOutDownLeft = exports.rotateOut = exports.rotateInUpRight = exports.rotateInUpLeft = exports.rotateInDownRight = exports.rotateInDownLeft = exports.rotateIn = exports.lightSpeedOut = exports.lightSpeedIn = exports.flipOutY = exports.flipOutX = exports.flipInY = exports.flipInX = exports.flip = exports.fadeOutUpBig = exports.fadeOutUp = exports.fadeOutRightBig = exports.fadeOutRight = exports.fadeOutLeftBig = exports.fadeOutLeft = exports.fadeOutDownBig = exports.fadeOutDown = exports.fadeOut = exports.fadeInUpBig = exports.fadeInUp = exports.fadeInRightBig = exports.fadeInRight = exports.fadeInLeftBig = exports.fadeInLeft = exports.fadeInDownBig = exports.fadeInDown = exports.fadeIn = exports.bounceOutUp = exports.bounceOutRight = exports.bounceOutLeft = exports.bounceOutDown = exports.bounceOut = exports.bounceInUp = exports.bounceInRight = exports.bounceInLeft = exports.bounceInDown = exports.bounceIn = exports.wobble = exports.tada = exports.swing = exports.shake = exports.rubberBand = exports.pulse = exports.jello = exports.headShake = exports.flash = exports.bounce = undefined;
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _templateObject = _taggedTemplateLiteral(['\n  from, 20%, 53%, 80%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n    transform: translate3d(0,0,0);\n  }\n\n  40%, 43% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, -4px, 0);\n  }\n'], ['\n  from, 20%, 53%, 80%, to {\n    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);\n    transform: translate3d(0,0,0);\n  }\n\n  40%, 43% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -30px, 0);\n  }\n\n  70% {\n    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);\n    transform: translate3d(0, -15px, 0);\n  }\n\n  90% {\n    transform: translate3d(0, -4px, 0);\n  }\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n  from, 50%, to {\n    opacity: 1;\n  }\n\n  25%, 75% {\n    opacity: 0;\n  }\n'], ['\n  from, 50%, to {\n    opacity: 1;\n  }\n\n  25%, 75% {\n    opacity: 0;\n  }\n']),
@@ -84,7 +81,10 @@ var _templateObject = _taggedTemplateLiteral(['\n  from, 20%, 53%, 80%, to {\n  
     _templateObject75 = _taggedTemplateLiteral(['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(.1) translate3d(-2000px, 0, 0);\n    transform-origin: left center;\n  }\n'], ['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(.1) translate3d(-2000px, 0, 0);\n    transform-origin: left center;\n  }\n']),
     _templateObject76 = _taggedTemplateLiteral(['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(.1) translate3d(2000px, 0, 0);\n    transform-origin: right center;\n  }\n'], ['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale(.1) translate3d(2000px, 0, 0);\n    transform-origin: right center;\n  }\n']),
     _templateObject77 = _taggedTemplateLiteral(['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);\n    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);\n    transform-origin: center bottom;\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);\n  }\n'], ['\n  40% {\n    opacity: 1;\n    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);\n    animation-timing-function: cubic-bezier(0.550, 0.055, 0.675, 0.190);\n  }\n\n  to {\n    opacity: 0;\n    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);\n    transform-origin: center bottom;\n    animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);\n  }\n']),
-    _templateObject78 = _taggedTemplateLiteral(['\n  animation-name: ', ';\n  animation-duration: ', ';\n  animation-timing-function: ', ';\n  animation-delay: ', ';\n  animation-iteration-count: ', ';\n  animation-direction: ', ';\n  animation-fill-mode: ', ';\n  animation-play-state: ', ';\n  transform-origin: ', ';\n  backface-visibility: ', ';\n  opacity: ', '\n'], ['\n  animation-name: ', ';\n  animation-duration: ', ';\n  animation-timing-function: ', ';\n  animation-delay: ', ';\n  animation-iteration-count: ', ';\n  animation-direction: ', ';\n  animation-fill-mode: ', ';\n  animation-play-state: ', ';\n  transform-origin: ', ';\n  backface-visibility: ', ';\n  opacity: ', '\n']);
+    _templateObject78 = _taggedTemplateLiteral(['\n    ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '\n  '], ['\n    ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '\n  ']),
+    _templateObject79 = _taggedTemplateLiteral(['\n  animation: ', ';\n  transform-origin: ', ';\n  backface-visibility: ', ';\n  opacity: ', '\n'], ['\n  animation: ', ';\n  transform-origin: ', ';\n  backface-visibility: ', ';\n  opacity: ', '\n']);
+
+exports.default = AnimateStyled;
 
 var _styledComponents = require('styled-components');
 
@@ -96,126 +96,200 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
 function _taggedTemplateLiteral(strings, raw) { return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var bounce = exports.bounce = (0, _styledComponents.keyframes)(_templateObject);
-var flash = exports.flash = (0, _styledComponents.keyframes)(_templateObject2);
-var headShake = exports.headShake = (0, _styledComponents.keyframes)(_templateObject3);
-var jello = exports.jello = (0, _styledComponents.keyframes)(_templateObject4);
+var bounce = (0, _styledComponents.keyframes)(_templateObject);
+var flash = (0, _styledComponents.keyframes)(_templateObject2);
+var headShake = (0, _styledComponents.keyframes)(_templateObject3);
+var jello = (0, _styledComponents.keyframes)(_templateObject4);
 
-var pulse = exports.pulse = (0, _styledComponents.keyframes)(_templateObject5);
+var pulse = (0, _styledComponents.keyframes)(_templateObject5);
 
-var rubberBand = exports.rubberBand = (0, _styledComponents.keyframes)(_templateObject6);
-var shake = exports.shake = (0, _styledComponents.keyframes)(_templateObject7);
-var swing = exports.swing = (0, _styledComponents.keyframes)(_templateObject8);
+var rubberBand = (0, _styledComponents.keyframes)(_templateObject6);
+var shake = (0, _styledComponents.keyframes)(_templateObject7);
+var swing = (0, _styledComponents.keyframes)(_templateObject8);
 
-var tada = exports.tada = (0, _styledComponents.keyframes)(_templateObject9);
+var tada = (0, _styledComponents.keyframes)(_templateObject9);
 
-var wobble = exports.wobble = (0, _styledComponents.keyframes)(_templateObject10);
-var bounceIn = exports.bounceIn = (0, _styledComponents.keyframes)(_templateObject11);
+var wobble = (0, _styledComponents.keyframes)(_templateObject10);
+var bounceIn = (0, _styledComponents.keyframes)(_templateObject11);
 
-var bounceInDown = exports.bounceInDown = (0, _styledComponents.keyframes)(_templateObject12);
+var bounceInDown = (0, _styledComponents.keyframes)(_templateObject12);
 
-var bounceInLeft = exports.bounceInLeft = (0, _styledComponents.keyframes)(_templateObject13);
+var bounceInLeft = (0, _styledComponents.keyframes)(_templateObject13);
 
-var bounceInRight = exports.bounceInRight = (0, _styledComponents.keyframes)(_templateObject14);
+var bounceInRight = (0, _styledComponents.keyframes)(_templateObject14);
 
-var bounceInUp = exports.bounceInUp = (0, _styledComponents.keyframes)(_templateObject15);
+var bounceInUp = (0, _styledComponents.keyframes)(_templateObject15);
 
-var bounceOut = exports.bounceOut = (0, _styledComponents.keyframes)(_templateObject16);
+var bounceOut = (0, _styledComponents.keyframes)(_templateObject16);
 
-var bounceOutDown = exports.bounceOutDown = (0, _styledComponents.keyframes)(_templateObject17);
+var bounceOutDown = (0, _styledComponents.keyframes)(_templateObject17);
 
-var bounceOutLeft = exports.bounceOutLeft = (0, _styledComponents.keyframes)(_templateObject18);
+var bounceOutLeft = (0, _styledComponents.keyframes)(_templateObject18);
 
-var bounceOutRight = exports.bounceOutRight = (0, _styledComponents.keyframes)(_templateObject19);
+var bounceOutRight = (0, _styledComponents.keyframes)(_templateObject19);
 
-var bounceOutUp = exports.bounceOutUp = (0, _styledComponents.keyframes)(_templateObject20);
+var bounceOutUp = (0, _styledComponents.keyframes)(_templateObject20);
 
-var fadeIn = exports.fadeIn = (0, _styledComponents.keyframes)(_templateObject21);
+var fadeIn = (0, _styledComponents.keyframes)(_templateObject21);
 
-var fadeInDown = exports.fadeInDown = (0, _styledComponents.keyframes)(_templateObject22);
+var fadeInDown = (0, _styledComponents.keyframes)(_templateObject22);
 
-var fadeInDownBig = exports.fadeInDownBig = (0, _styledComponents.keyframes)(_templateObject23);
+var fadeInDownBig = (0, _styledComponents.keyframes)(_templateObject23);
 
-var fadeInLeft = exports.fadeInLeft = (0, _styledComponents.keyframes)(_templateObject24);
-var fadeInLeftBig = exports.fadeInLeftBig = (0, _styledComponents.keyframes)(_templateObject25);
+var fadeInLeft = (0, _styledComponents.keyframes)(_templateObject24);
+var fadeInLeftBig = (0, _styledComponents.keyframes)(_templateObject25);
 
-var fadeInRight = exports.fadeInRight = (0, _styledComponents.keyframes)(_templateObject26);
-var fadeInRightBig = exports.fadeInRightBig = (0, _styledComponents.keyframes)(_templateObject27);
-var fadeInUp = exports.fadeInUp = (0, _styledComponents.keyframes)(_templateObject28);
-var fadeInUpBig = exports.fadeInUpBig = (0, _styledComponents.keyframes)(_templateObject29);
-var fadeOut = exports.fadeOut = (0, _styledComponents.keyframes)(_templateObject30);
-var fadeOutDown = exports.fadeOutDown = (0, _styledComponents.keyframes)(_templateObject31);
-var fadeOutDownBig = exports.fadeOutDownBig = (0, _styledComponents.keyframes)(_templateObject32);
-var fadeOutLeft = exports.fadeOutLeft = (0, _styledComponents.keyframes)(_templateObject33);
-var fadeOutLeftBig = exports.fadeOutLeftBig = (0, _styledComponents.keyframes)(_templateObject34);
-var fadeOutRight = exports.fadeOutRight = (0, _styledComponents.keyframes)(_templateObject35);
-var fadeOutRightBig = exports.fadeOutRightBig = (0, _styledComponents.keyframes)(_templateObject36);
-var fadeOutUp = exports.fadeOutUp = (0, _styledComponents.keyframes)(_templateObject37);
-var fadeOutUpBig = exports.fadeOutUpBig = (0, _styledComponents.keyframes)(_templateObject38);
-var flip = exports.flip = (0, _styledComponents.keyframes)(_templateObject39);
-var flipInX = exports.flipInX = (0, _styledComponents.keyframes)(_templateObject40);
-var flipInY = exports.flipInY = (0, _styledComponents.keyframes)(_templateObject41);
-var flipOutX = exports.flipOutX = (0, _styledComponents.keyframes)(_templateObject42);
-var flipOutY = exports.flipOutY = (0, _styledComponents.keyframes)(_templateObject43);
-var lightSpeedIn = exports.lightSpeedIn = (0, _styledComponents.keyframes)(_templateObject44);
-var lightSpeedOut = exports.lightSpeedOut = (0, _styledComponents.keyframes)(_templateObject45);
-var rotateIn = exports.rotateIn = (0, _styledComponents.keyframes)(_templateObject46);
-var rotateInDownLeft = exports.rotateInDownLeft = (0, _styledComponents.keyframes)(_templateObject47);
-var rotateInDownRight = exports.rotateInDownRight = (0, _styledComponents.keyframes)(_templateObject48);
-var rotateInUpLeft = exports.rotateInUpLeft = (0, _styledComponents.keyframes)(_templateObject49);
-var rotateInUpRight = exports.rotateInUpRight = (0, _styledComponents.keyframes)(_templateObject50);
-var rotateOut = exports.rotateOut = (0, _styledComponents.keyframes)(_templateObject51);
-var rotateOutDownLeft = exports.rotateOutDownLeft = (0, _styledComponents.keyframes)(_templateObject52);
-var rotateOutDownRight = exports.rotateOutDownRight = (0, _styledComponents.keyframes)(_templateObject53);
-var rotateOutUpLeft = exports.rotateOutUpLeft = (0, _styledComponents.keyframes)(_templateObject54);
-var rotateOutUpRight = exports.rotateOutUpRight = (0, _styledComponents.keyframes)(_templateObject55);
-var slideInDown = exports.slideInDown = (0, _styledComponents.keyframes)(_templateObject56);
-var slideInLeft = exports.slideInLeft = (0, _styledComponents.keyframes)(_templateObject57);
-var slideInRight = exports.slideInRight = (0, _styledComponents.keyframes)(_templateObject58);
-var slideInUp = exports.slideInUp = (0, _styledComponents.keyframes)(_templateObject59);
-var slideOutDown = exports.slideOutDown = (0, _styledComponents.keyframes)(_templateObject60);
-var slideOutLeft = exports.slideOutLeft = (0, _styledComponents.keyframes)(_templateObject61);
-var slideOutRight = exports.slideOutRight = (0, _styledComponents.keyframes)(_templateObject62);
-var slideOutUp = exports.slideOutUp = (0, _styledComponents.keyframes)(_templateObject63);
-var hinge = exports.hinge = (0, _styledComponents.keyframes)(_templateObject64);
-var jackInTheBox = exports.jackInTheBox = (0, _styledComponents.keyframes)(_templateObject65);
-var rollIn = exports.rollIn = (0, _styledComponents.keyframes)(_templateObject66);
-var rollOut = exports.rollOut = (0, _styledComponents.keyframes)(_templateObject67);
-var zoomIn = exports.zoomIn = (0, _styledComponents.keyframes)(_templateObject68);
-var zoomInDown = exports.zoomInDown = (0, _styledComponents.keyframes)(_templateObject69);
-var zoomInLeft = exports.zoomInLeft = (0, _styledComponents.keyframes)(_templateObject70);
-var zoomInRight = exports.zoomInRight = (0, _styledComponents.keyframes)(_templateObject71);
-var zoomInUp = exports.zoomInUp = (0, _styledComponents.keyframes)(_templateObject72);
-var zoomOut = exports.zoomOut = (0, _styledComponents.keyframes)(_templateObject73);
-var zoomOutDown = exports.zoomOutDown = (0, _styledComponents.keyframes)(_templateObject74);
-var zoomOutLeft = exports.zoomOutLeft = (0, _styledComponents.keyframes)(_templateObject75);
-var zoomOutRight = exports.zoomOutRight = (0, _styledComponents.keyframes)(_templateObject76);
-var zoomOutUp = exports.zoomOutUp = (0, _styledComponents.keyframes)(_templateObject77);
+var fadeInRight = (0, _styledComponents.keyframes)(_templateObject26);
+var fadeInRightBig = (0, _styledComponents.keyframes)(_templateObject27);
+var fadeInUp = (0, _styledComponents.keyframes)(_templateObject28);
+var fadeInUpBig = (0, _styledComponents.keyframes)(_templateObject29);
+var fadeOut = (0, _styledComponents.keyframes)(_templateObject30);
+var fadeOutDown = (0, _styledComponents.keyframes)(_templateObject31);
+var fadeOutDownBig = (0, _styledComponents.keyframes)(_templateObject32);
+var fadeOutLeft = (0, _styledComponents.keyframes)(_templateObject33);
+var fadeOutLeftBig = (0, _styledComponents.keyframes)(_templateObject34);
+var fadeOutRight = (0, _styledComponents.keyframes)(_templateObject35);
+var fadeOutRightBig = (0, _styledComponents.keyframes)(_templateObject36);
+var fadeOutUp = (0, _styledComponents.keyframes)(_templateObject37);
+var fadeOutUpBig = (0, _styledComponents.keyframes)(_templateObject38);
+var flip = (0, _styledComponents.keyframes)(_templateObject39);
+var flipInX = (0, _styledComponents.keyframes)(_templateObject40);
+var flipInY = (0, _styledComponents.keyframes)(_templateObject41);
+var flipOutX = (0, _styledComponents.keyframes)(_templateObject42);
+var flipOutY = (0, _styledComponents.keyframes)(_templateObject43);
+var lightSpeedIn = (0, _styledComponents.keyframes)(_templateObject44);
+var lightSpeedOut = (0, _styledComponents.keyframes)(_templateObject45);
+var rotateIn = (0, _styledComponents.keyframes)(_templateObject46);
+var rotateInDownLeft = (0, _styledComponents.keyframes)(_templateObject47);
+var rotateInDownRight = (0, _styledComponents.keyframes)(_templateObject48);
+var rotateInUpLeft = (0, _styledComponents.keyframes)(_templateObject49);
+var rotateInUpRight = (0, _styledComponents.keyframes)(_templateObject50);
+var rotateOut = (0, _styledComponents.keyframes)(_templateObject51);
+var rotateOutDownLeft = (0, _styledComponents.keyframes)(_templateObject52);
+var rotateOutDownRight = (0, _styledComponents.keyframes)(_templateObject53);
+var rotateOutUpLeft = (0, _styledComponents.keyframes)(_templateObject54);
+var rotateOutUpRight = (0, _styledComponents.keyframes)(_templateObject55);
+var slideInDown = (0, _styledComponents.keyframes)(_templateObject56);
+var slideInLeft = (0, _styledComponents.keyframes)(_templateObject57);
+var slideInRight = (0, _styledComponents.keyframes)(_templateObject58);
+var slideInUp = (0, _styledComponents.keyframes)(_templateObject59);
+var slideOutDown = (0, _styledComponents.keyframes)(_templateObject60);
+var slideOutLeft = (0, _styledComponents.keyframes)(_templateObject61);
+var slideOutRight = (0, _styledComponents.keyframes)(_templateObject62);
+var slideOutUp = (0, _styledComponents.keyframes)(_templateObject63);
+var hinge = (0, _styledComponents.keyframes)(_templateObject64);
+var jackInTheBox = (0, _styledComponents.keyframes)(_templateObject65);
+var rollIn = (0, _styledComponents.keyframes)(_templateObject66);
+var rollOut = (0, _styledComponents.keyframes)(_templateObject67);
+var zoomIn = (0, _styledComponents.keyframes)(_templateObject68);
+var zoomInDown = (0, _styledComponents.keyframes)(_templateObject69);
+var zoomInLeft = (0, _styledComponents.keyframes)(_templateObject70);
+var zoomInRight = (0, _styledComponents.keyframes)(_templateObject71);
+var zoomInUp = (0, _styledComponents.keyframes)(_templateObject72);
+var zoomOut = (0, _styledComponents.keyframes)(_templateObject73);
+var zoomOutDown = (0, _styledComponents.keyframes)(_templateObject74);
+var zoomOutLeft = (0, _styledComponents.keyframes)(_templateObject75);
+var zoomOutRight = (0, _styledComponents.keyframes)(_templateObject76);
+var zoomOutUp = (0, _styledComponents.keyframes)(_templateObject77);
+var allAnimate = {
+  bounce: bounce,
+  flash: flash,
+  headShake: headShake,
+  jello: jello,
+  pulse: pulse,
+  rubberBand: rubberBand,
+  shake: shake,
+  swing: swing,
+  tada: tada,
+  wobble: wobble,
+  bounceIn: bounceIn,
+  bounceInDown: bounceInDown,
+  bounceInLeft: bounceInLeft,
+  bounceInRight: bounceInRight,
+  bounceInUp: bounceInUp,
+  bounceOut: bounceOut,
+  bounceOutDown: bounceOutDown,
+  bounceOutLeft: bounceOutLeft,
+  bounceOutRight: bounceOutRight,
+  bounceOutUp: bounceOutUp,
+  fadeIn: fadeIn,
+  fadeInDown: fadeInDown,
+  fadeInDownBig: fadeInDownBig,
+  fadeInLeft: fadeInLeft,
+  fadeInLeftBig: fadeInLeftBig,
+  fadeInRight: fadeInRight,
+  fadeInRightBig: fadeInRightBig,
+  fadeInUp: fadeInUp,
+  fadeInUpBig: fadeInUpBig,
+  fadeOut: fadeOut,
+  fadeOutDown: fadeOutDown,
+  fadeOutDownBig: fadeOutDownBig,
+  fadeOutLeft: fadeOutLeft,
+  fadeOutLeftBig: fadeOutLeftBig,
+  fadeOutRight: fadeOutRight,
+  fadeOutRightBig: fadeOutRightBig,
+  fadeOutUp: fadeOutUp,
+  fadeOutUpBig: fadeOutUpBig,
+  flip: flip,
+  flipInX: flipInX,
+  flipInY: flipInY,
+  flipOutX: flipOutX,
+  flipOutY: flipOutY,
+  lightSpeedIn: lightSpeedIn,
+  lightSpeedOut: lightSpeedOut,
+  rotateIn: rotateIn,
+  rotateInDownLeft: rotateInDownLeft,
+  rotateInDownRight: rotateInDownRight,
+  rotateInUpLeft: rotateInUpLeft,
+  rotateInUpRight: rotateInUpRight,
+  rotateOut: rotateOut,
+  rotateOutDownLeft: rotateOutDownLeft,
+  rotateOutDownRight: rotateOutDownRight,
+  rotateOutUpLeft: rotateOutUpLeft,
+  rotateOutUpRight: rotateOutUpRight,
+  slideInDown: slideInDown,
+  slideInLeft: slideInLeft,
+  slideInRight: slideInRight,
+  slideInUp: slideInUp,
+  slideOutDown: slideOutDown,
+  slideOutLeft: slideOutLeft,
+  slideOutRight: slideOutRight,
+  slideOutUp: slideOutUp,
+  hinge: hinge,
+  jackInTheBox: jackInTheBox,
+  rollIn: rollIn,
+  rollOut: rollOut,
+  zoomIn: zoomIn,
+  zoomInDown: zoomInDown,
+  zoomInLeft: zoomInLeft,
+  zoomInRight: zoomInRight,
+  zoomInUp: zoomInUp,
+  zoomOut: zoomOut,
+  zoomOutDown: zoomOutDown,
+  zoomOutLeft: zoomOutLeft,
+  zoomOutRight: zoomOutRight,
+  zoomOutUp: zoomOutUp
+};
 
-var AnimationFlow = _styledComponents2.default.div(_templateObject78, function (props) {
-  return props.name;
-}, function (props) {
-  return props.duration;
-}, function (props) {
-  return props.timingFunction;
-}, function (props) {
-  return props.delay;
-}, function (props) {
-  return props.iterationCount;
-}, function (props) {
-  return props.direction;
-}, function (props) {
-  return props.fillMode;
-}, function (props) {
-  return props.playState;
+/**
+ *  @keyframes duration 
+ * | timing-function 
+ * | delay 
+ * | iteration-count 
+ * | direction 
+ * | fill-mode 
+ * | play-state 
+ * | name 
+*/
+
+var animation = function animation(props) {
+  return (0, _styledComponents.css)(_templateObject78, props.duration || '2s', props.timingFunction || 'linear', props.delay || '0s', props.iterationCount || "infinite", props.direction || 'normal', props.fillMode || 'none', props.playState || 'running', allAnimate[props.name] || shake);
+};
+
+var AnimationFlow = _styledComponents2.default.div(_templateObject79, function (props) {
+  return animation(props);
 }, function (props) {
   return props.transformOrigin;
 }, function (props) {
@@ -223,42 +297,15 @@ var AnimationFlow = _styledComponents2.default.div(_templateObject78, function (
 }, function (props) {
   return props.opacity;
 });
-
-var AnimateStyled = function (_React$Component) {
-  _inherits(AnimateStyled, _React$Component);
-
-  function AnimateStyled(props) {
-    _classCallCheck(this, AnimateStyled);
-
-    return _possibleConstructorReturn(this, (AnimateStyled.__proto__ || Object.getPrototypeOf(AnimateStyled)).call(this, props));
-  }
-
-  _createClass(AnimateStyled, [{
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        AnimationFlow,
-        this.props,
-        this.props.children
-      );
-    }
-  }]);
-
-  return AnimateStyled;
-}(_react2.default.Component);
-
-exports.default = AnimateStyled;
-
+function AnimateStyled(props) {
+  return _react2.default.createElement(
+    AnimationFlow,
+    props,
+    props.children
+  );
+}
 
 AnimateStyled.defaultProps = {
-  name: flash,
-  duration: '2s',
-  timingFunction: 'linear',
-  delay: '0s',
-  iterationCount: 'infinite',
-  direction: 'normal',
-  fillMode: 'none',
-  playState: 'running',
   transformOrigin: 'center',
   backfaceVisibility: 'hidden',
   opacity: 1
