@@ -1,5 +1,5 @@
-import styled, { keyframes, css } from 'styled-components';
-import React from 'react';
+import styled, { keyframes, css } from "styled-components";
+import React from "react";
 
 const bounce = keyframes`
   from, 20%, 53%, 80%, to {
@@ -20,7 +20,8 @@ const bounce = keyframes`
   90% {
     transform: translate3d(0, -4px, 0);
   }
-`
+`;
+
 const flash = keyframes`
   from, 50%, to {
     opacity: 1;
@@ -29,7 +30,8 @@ const flash = keyframes`
   25%, 75% {
     opacity: 0;
   }
-`
+`;
+
 const headShake = keyframes`
   0% {
     transform: translateX(0);
@@ -54,7 +56,8 @@ const headShake = keyframes`
   50% {
     transform: translateX(0);
   }
-`
+`;
+
 const jello = keyframes`
   from, 11.1%, to {
   transform: none;
@@ -87,7 +90,7 @@ const jello = keyframes`
   88.8% {
   transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
   }
-`
+`;
 
 const pulse = keyframes`
   from {
@@ -101,7 +104,7 @@ const pulse = keyframes`
   to {
     transform: scale3d(1, 1, 1);
   }
-`
+`;
 
 const rubberBand = keyframes`
   from {
@@ -131,7 +134,8 @@ const rubberBand = keyframes`
   to {
     transform: scale3d(1, 1, 1);
   }
-`
+`;
+
 const shake = keyframes`
   from, to {
     transform: translate3d(0, 0, 0);
@@ -144,7 +148,8 @@ const shake = keyframes`
   20%, 40%, 60%, 80% {
     transform: translate3d(10px, 0, 0);
   }
-`
+`;
+
 const swing = keyframes`
   20% {
     transform: rotate3d(0, 0, 1, 15deg);
@@ -165,7 +170,7 @@ const swing = keyframes`
   to {
     transform: rotate3d(0, 0, 1, 0deg);
   }
-`
+`;
 
 const tada = keyframes`
   from {
@@ -187,7 +192,7 @@ const tada = keyframes`
   to {
     transform: scale3d(1, 1, 1);
   }
-`
+`;
 
 const wobble = keyframes`
   from {
@@ -217,7 +222,8 @@ const wobble = keyframes`
   to {
   transform: none;
   }
-`
+`;
+
 const bounceIn = keyframes`
   from, 20%, 40%, 60%, 80%, to {
   animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
@@ -249,7 +255,7 @@ const bounceIn = keyframes`
   opacity: 1;
   transform: scale3d(1, 1, 1);
   }
-`
+`;
 
 const bounceInDown = keyframes`
   from, 60%, 75%, 90%, to {
@@ -277,7 +283,7 @@ const bounceInDown = keyframes`
   to {
   transform: none;
   }
-`
+`;
 
 const bounceInLeft = keyframes`
   from, 60%, 75%, 90%, to {
@@ -305,7 +311,7 @@ const bounceInLeft = keyframes`
   to {
   transform: none;
   }
-`
+`;
 
 const bounceInRight = keyframes`
   from, 60%, 75%, 90%, to {
@@ -333,7 +339,7 @@ const bounceInRight = keyframes`
   to {
   transform: none;
   }
-`
+`;
 
 const bounceInUp = keyframes`
   from, 60%, 75%, 90%, to {
@@ -361,7 +367,7 @@ const bounceInUp = keyframes`
   to {
   transform: translate3d(0, 0, 0);
   }
-`
+`;
 
 const bounceOut = keyframes`
   20% {
@@ -377,7 +383,7 @@ const bounceOut = keyframes`
   opacity: 0;
   transform: scale3d(.3, .3, .3);
   }
-`
+`;
 
 const bounceOutDown = keyframes`
   20% {
@@ -393,7 +399,7 @@ const bounceOutDown = keyframes`
   opacity: 0;
   transform: translate3d(0, 2000px, 0);
   }
-`
+`;
 
 const bounceOutLeft = keyframes`
   20% {
@@ -405,7 +411,7 @@ const bounceOutLeft = keyframes`
   opacity: 0;
   transform: translate3d(-2000px, 0, 0);
   }
-`
+`;
 
 const bounceOutRight = keyframes`
   20% {
@@ -417,7 +423,7 @@ const bounceOutRight = keyframes`
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
   }
-`
+`;
 
 const bounceOutUp = keyframes`
   20% {
@@ -433,12 +439,12 @@ const bounceOutUp = keyframes`
   opacity: 0;
   transform: translate3d(0, -2000px, 0);
   }
-`
+`;
 
 const fadeIn = keyframes`
   from {opacity: 0;}
   to {opacity: 1;}
-`
+`;
 
 const fadeInDown = keyframes`
   from {
@@ -450,7 +456,7 @@ const fadeInDown = keyframes`
     opacity: 1;
     transform: none;
   }
-`
+`;
 
 const fadeInDownBig = keyframes`
   from {
@@ -462,7 +468,7 @@ const fadeInDownBig = keyframes`
     opacity: 1;
     transform: none;
   }
-`
+`;
 
 const fadeInLeft = keyframes`
   from {
@@ -474,7 +480,8 @@ const fadeInLeft = keyframes`
     opacity: 1;
     transform: none;
   }
-`
+`;
+
 const fadeInLeftBig = keyframes`
   from {
     opacity: 0;
@@ -485,7 +492,7 @@ const fadeInLeftBig = keyframes`
     opacity: 1;
     transform: none;
   }
-`
+`;
 
 const fadeInRight = keyframes`
   from {
@@ -497,7 +504,8 @@ const fadeInRight = keyframes`
     opacity: 1;
     transform: none;
   }
-`
+`;
+
 const fadeInRightBig = keyframes`
   from {
     opacity: 0;
@@ -508,7 +516,8 @@ const fadeInRightBig = keyframes`
     opacity: 1;
     transform: none;
   }
-`
+`;
+
 const fadeInUp = keyframes`
   from {
     opacity: 0;
@@ -519,7 +528,8 @@ const fadeInUp = keyframes`
     opacity: 1;
     transform: none;
   }
-`
+`;
+
 const fadeInUpBig = keyframes`
   from {
     opacity: 0;
@@ -530,7 +540,8 @@ const fadeInUpBig = keyframes`
     opacity: 1;
     transform: none;
   }
-`
+`;
+
 const fadeOut = keyframes`
   from {
     opacity: 1;
@@ -539,7 +550,8 @@ const fadeOut = keyframes`
   to {
     opacity: 0;
   }
-`
+`;
+
 const fadeOutDown = keyframes`
   from {
     opacity: 1;
@@ -549,7 +561,8 @@ const fadeOutDown = keyframes`
     opacity: 0;
     transform: translate3d(0, 100%, 0);
   }
-`
+`;
+
 const fadeOutDownBig = keyframes`
   from {
     opacity: 1;
@@ -559,7 +572,8 @@ const fadeOutDownBig = keyframes`
     opacity: 0;
     transform: translate3d(0, 2000px, 0);
   }
-`
+`;
+
 const fadeOutLeft = keyframes`
   from {
     opacity: 1;
@@ -569,7 +583,8 @@ const fadeOutLeft = keyframes`
     opacity: 0;
     transform: translate3d(-100%, 0, 0);
   }
-`
+`;
+
 const fadeOutLeftBig = keyframes`
   from {
     opacity: 1;
@@ -579,7 +594,8 @@ const fadeOutLeftBig = keyframes`
     opacity: 0;
     transform: translate3d(-2000px, 0, 0);
   }
-`
+`;
+
 const fadeOutRight = keyframes`
   from {
     opacity: 1;
@@ -589,7 +605,8 @@ const fadeOutRight = keyframes`
     opacity: 0;
     transform: translate3d(100%, 0, 0);
   }
-`
+`;
+
 const fadeOutRightBig = keyframes`
   from {
     opacity: 1;
@@ -599,7 +616,8 @@ const fadeOutRightBig = keyframes`
     opacity: 0;
     transform: translate3d(2000px, 0, 0);
   }
-`
+`;
+
 const fadeOutUp = keyframes`
   from {
     opacity: 1;
@@ -609,7 +627,8 @@ const fadeOutUp = keyframes`
     opacity: 0;
     transform: translate3d(0, -100%, 0);
   }
-`
+`;
+
 const fadeOutUpBig = keyframes`
   from {
     opacity: 1;
@@ -619,7 +638,8 @@ const fadeOutUpBig = keyframes`
     opacity: 0;
     transform: translate3d(0, -2000px, 0);
   }
-`
+`;
+
 const flip = keyframes`
   from {
     transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
@@ -645,7 +665,8 @@ const flip = keyframes`
     transform: perspective(400px);
     animation-timing-function: ease-in;
   }
-`
+`;
+
 const flipInX = keyframes`
   from {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
@@ -670,7 +691,8 @@ const flipInX = keyframes`
   to {
     transform: perspective(400px);
   }
-`
+`;
+
 const flipInY = keyframes`
   from {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
@@ -695,7 +717,8 @@ const flipInY = keyframes`
   to {
     transform: perspective(400px);
   }
-`
+`;
+
 const flipOutX = keyframes`
   from {
     transform: perspective(400px);
@@ -710,7 +733,8 @@ const flipOutX = keyframes`
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     opacity: 0;
   }
-`
+`;
+
 const flipOutY = keyframes`
   from {
     transform: perspective(400px);
@@ -725,7 +749,8 @@ const flipOutY = keyframes`
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     opacity: 0;
   }
-`
+`;
+
 const lightSpeedIn = keyframes`
   from {
     transform: translate3d(100%, 0, 0) skewX(-30deg);
@@ -746,7 +771,8 @@ const lightSpeedIn = keyframes`
     transform: none;
     opacity: 1;
   }
-`
+`;
+
 const lightSpeedOut = keyframes`
   from {
     opacity: 1;
@@ -756,7 +782,8 @@ const lightSpeedOut = keyframes`
     transform: translate3d(100%, 0, 0) skewX(30deg);
     opacity: 0;
   }
-`
+`;
+
 const rotateIn = keyframes`
   from {
     transform-origin: center;
@@ -769,7 +796,8 @@ const rotateIn = keyframes`
     transform: none;
     opacity: 1;
   }
-`
+`;
+
 const rotateInDownLeft = keyframes`
   from {
     transform-origin: left bottom;
@@ -782,7 +810,8 @@ const rotateInDownLeft = keyframes`
     transform: none;
     opacity: 1;
   }
-`
+`;
+
 const rotateInDownRight = keyframes`
   from {
     transform-origin: right bottom;
@@ -795,7 +824,8 @@ const rotateInDownRight = keyframes`
     transform: none;
     opacity: 1;
   }
-`
+`;
+
 const rotateInUpLeft = keyframes`
   from {
     transform-origin: left bottom;
@@ -808,7 +838,8 @@ const rotateInUpLeft = keyframes`
     transform: none;
     opacity: 1;
   }
-`
+`;
+
 const rotateInUpRight = keyframes`
   from {
     transform-origin: right bottom;
@@ -821,7 +852,8 @@ const rotateInUpRight = keyframes`
     transform: none;
     opacity: 1;
   }
-`
+`;
+
 const rotateOut = keyframes`
   from {
     transform-origin: center;
@@ -833,7 +865,8 @@ const rotateOut = keyframes`
     transform: rotate3d(0, 0, 1, 200deg);
     opacity: 0;
   }
-`
+`;
+
 const rotateOutDownLeft = keyframes`
   from {
     transform-origin: left bottom;
@@ -845,7 +878,8 @@ const rotateOutDownLeft = keyframes`
     transform: rotate3d(0, 0, 1, 45deg);
     opacity: 0;
   }
-`
+`;
+
 const rotateOutDownRight = keyframes`
   from {
     transform-origin: right bottom;
@@ -857,7 +891,8 @@ const rotateOutDownRight = keyframes`
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
-`
+`;
+
 const rotateOutUpLeft = keyframes`
   from {
     transform-origin: left bottom;
@@ -869,7 +904,8 @@ const rotateOutUpLeft = keyframes`
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
-`
+`;
+
 const rotateOutUpRight = keyframes`
   from {
     transform-origin: right bottom;
@@ -881,7 +917,8 @@ const rotateOutUpRight = keyframes`
     transform: rotate3d(0, 0, 1, 90deg);
     opacity: 0;
   }
-`
+`;
+
 const slideInDown = keyframes`
   from {
     transform: translate3d(0, -100%, 0);
@@ -891,7 +928,8 @@ const slideInDown = keyframes`
   to {
     transform: translate3d(0, 0, 0);
   }
-`
+`;
+
 const slideInLeft = keyframes`
   from {
     transform: translate3d(-100%, 0, 0);
@@ -901,7 +939,8 @@ const slideInLeft = keyframes`
   to {
     transform: translate3d(0, 0, 0);
   }
-`
+`;
+
 const slideInRight = keyframes`
   from {
     transform: translate3d(100%, 0, 0);
@@ -911,7 +950,8 @@ const slideInRight = keyframes`
   to {
     transform: translate3d(0, 0, 0);
   }
-`
+`;
+
 const slideInUp = keyframes`
   from {
     transform: translate3d(0, 100%, 0);
@@ -921,7 +961,8 @@ const slideInUp = keyframes`
   to {
     transform: translate3d(0, 0, 0);
   }
-`
+`;
+
 const slideOutDown = keyframes`
   from {
     transform: translate3d(0, 0, 0);
@@ -931,7 +972,8 @@ const slideOutDown = keyframes`
     visibility: hidden;
     transform: translate3d(0, 100%, 0);
   }
-`
+`;
+
 const slideOutLeft = keyframes`
   from {
     transform: translate3d(0, 0, 0);
@@ -941,7 +983,8 @@ const slideOutLeft = keyframes`
     visibility: hidden;
     transform: translate3d(-100%, 0, 0);
   }
-`
+`;
+
 const slideOutRight = keyframes`
   from {
     transform: translate3d(0, 0, 0);
@@ -951,7 +994,8 @@ const slideOutRight = keyframes`
     visibility: hidden;
     transform: translate3d(100%, 0, 0);
   }
-`
+`;
+
 const slideOutUp = keyframes`
   from {
     transform: translate3d(0, 0, 0);
@@ -961,7 +1005,8 @@ const slideOutUp = keyframes`
     visibility: hidden;
     transform: translate3d(0, -100%, 0);
   }
-`
+`;
+
 const hinge = keyframes`
   0% {
     transform-origin: top left;
@@ -985,7 +1030,8 @@ const hinge = keyframes`
     transform: translate3d(0, 700px, 0);
     opacity: 0;
   }
-`
+`;
+
 const jackInTheBox = keyframes`
   from {
     opacity: 0;
@@ -1005,7 +1051,8 @@ const jackInTheBox = keyframes`
     opacity: 1;
     transform: scale(1);
   }
-`
+`;
+
 const rollIn = keyframes`
   from {
     opacity: 0;
@@ -1016,7 +1063,8 @@ const rollIn = keyframes`
     opacity: 1;
     transform: none;
   }
-`
+`;
+
 const rollOut = keyframes`
   from {
     opacity: 1;
@@ -1026,7 +1074,8 @@ const rollOut = keyframes`
     opacity: 0;
     transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
   }
-`
+`;
+
 const zoomIn = keyframes`
   from {
     opacity: 0;
@@ -1036,7 +1085,8 @@ const zoomIn = keyframes`
   50% {
     opacity: 1;
   }
-`
+`;
+
 const zoomInDown = keyframes`
   from {
     opacity: 0;
@@ -1049,7 +1099,8 @@ const zoomInDown = keyframes`
     transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
-`
+`;
+
 const zoomInLeft = keyframes`
   from {
     opacity: 0;
@@ -1062,7 +1113,8 @@ const zoomInLeft = keyframes`
     transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
-`
+`;
+
 const zoomInRight = keyframes`
   from {
     opacity: 0;
@@ -1075,7 +1127,8 @@ const zoomInRight = keyframes`
     transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
-`
+`;
+
 const zoomInUp = keyframes`
   from {
     opacity: 0;
@@ -1088,7 +1141,8 @@ const zoomInUp = keyframes`
     transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
-`
+`;
+
 const zoomOut = keyframes`
   from {
     opacity: 1;
@@ -1102,7 +1156,8 @@ const zoomOut = keyframes`
   to {
     opacity: 0;
   }
-`
+`;
+
 const zoomOutDown = keyframes`
   40% {
     opacity: 1;
@@ -1116,7 +1171,8 @@ const zoomOutDown = keyframes`
     transform-origin: center bottom;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
-`
+`;
+
 const zoomOutLeft = keyframes`
   40% {
     opacity: 1;
@@ -1128,7 +1184,8 @@ const zoomOutLeft = keyframes`
     transform: scale(.1) translate3d(-2000px, 0, 0);
     transform-origin: left center;
   }
-`
+`;
+
 const zoomOutRight = keyframes`
   40% {
     opacity: 1;
@@ -1140,7 +1197,8 @@ const zoomOutRight = keyframes`
     transform: scale(.1) translate3d(2000px, 0, 0);
     transform-origin: right center;
   }
-`
+`;
+
 const zoomOutUp = keyframes`
   40% {
     opacity: 1;
@@ -1154,7 +1212,8 @@ const zoomOutUp = keyframes`
     transform-origin: center bottom;
     animation-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1);
   }
-`
+`;
+
 const allAnimate = {
   bounce,
   flash,
@@ -1248,21 +1307,30 @@ const allAnimate = {
 
 const animation = props =>
   css`
-    ${props.duration || '2s'} ${props.timingFunction || 'linear'} ${props.delay || '0s'} ${props.iterationCount || "infinite"} ${props.direction || 'normal'} ${props.fillMode || 'none'} ${props.playState || 'running'} ${allAnimate[props.name] || shake}
+    ${props.duration} ${props.timingFunction} ${props.delay} ${props.iterationCount} ${props.direction} ${props.fillMode} ${props.playState} ${allAnimate[props.name]}
   `;
 
 const AnimationFlow =styled.div`
   animation: ${props => animation(props)};
-  transform-origin: ${props=>props.transformOrigin};
-  backface-visibility: ${props=>props.backfaceVisibility};
-  opacity: ${props=>props.opacity}
-`
+  transform-origin: ${props => props.transformOrigin};
+  backface-visibility: ${props => props.backfaceVisibility};
+  opacity: ${props => props.opacity}
+`;
+
 export default function AnimateStyled(props) {
   return <AnimationFlow {...props} >{props.children}</AnimationFlow>
-}
+};
 
 AnimateStyled.defaultProps = {
-  transformOrigin: 'center',
-  backfaceVisibility: 'hidden',
+  name: "shake",
+  duration: "2s",
+  timingFunction: "linear",
+  delay: "0s",
+  iterationCount: "infinite",
+  direction: "normal",
+  fillMode: "none",
+  playState: "running",
+  transformOrigin: "center",
+  backfaceVisibility: "hidden",
   opacity: 1,
-}
+};
