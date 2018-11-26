@@ -1,5 +1,9 @@
 # AnimateStyled
 
+[![npm version](https://badge.fury.io/js/animate-styled.svg)](https://badge.fury.io/js/animate-styled)
+[![npm](https://img.shields.io/npm/dt/animate-styled.svg)](https://npmcharts.com/compare/animate-styled?minimal=true)
+![MIT](https://img.shields.io/dub/l/vibe-d.svg)
+
 *small contribution for those who work with react and styled-components*
 
 `AnimateStyled` is just a library based on the great work done by the people of [animate.css](https://github.com/daneden/animate.css) led to the stack of
@@ -42,13 +46,13 @@ render(){
 | duration | 2s | String |  1s, 300ms... |
 | timingFunction | linear | String | ease, ease-in, ease-out, ease-in-out, linear, step-start, step-end |
 | delay | 0s | String | 1s, 300ms... |
-|iterationCount | infinite | String, Number | 0 , 1 , 3 , infinite |
+| iterationCount | infinite | String, Number | 0 , 1 , 3 , infinite |
 | direction | normal | String | normal, reverse, alternate, alternate-reverse |
 | fillMode | none | String | none, forwards, backwards, both|
 | playState | running | String | running, paused |
 | transformOrigin | center | String | center, 50%, top bottom, 10% 80% ...|
 | backfaceVisibility | hidden | String | hidden, visible |
-| opacity | 0 | String | 0 -> 1 |
+| opacity | 0 | Number | 0 -> 1 |
 
 ## Names of animations
 For test all animation click [here](https://carlosmanotas.github.io/animate-styled/)
@@ -187,3 +191,6 @@ Nesting
 
 ## License
 AnimateStyled is licensed under the MIT license. (http://opensource.org/licenses/MIT)
+
+[npm-badge]: https://img.shields.io/npm/v/animate-styled.png?style=flat-square
+[npm]: https://www.npmjs.org/package/animate-styled

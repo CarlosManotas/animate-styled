@@ -1,8 +1,14 @@
 .DS_Store
-node_modules
 yarn.lock
 package-lock.json
 .cache
 .storybook
 stories
 storybook-static
+/coverage
+/demo/dist
+/es
+/lib
+/node_modules
+/umd
+npm-debug.log*
