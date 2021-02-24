@@ -1,0 +1,13 @@
+export declare const fadeIn: import("styled-components").Keyframes;
+export declare const fadeInBottomLeft: import("styled-components").Keyframes;
+export declare const fadeInBottomRight: import("styled-components").Keyframes;
+export declare const fadeInDown: import("styled-components").Keyframes;
+export declare const fadeInDownBig: import("styled-components").Keyframes;
+export declare const fadeInLeft: import("styled-components").Keyframes;
+export declare const fadeInLeftBig: import("styled-components").Keyframes;
+export declare const fadeInRight: import("styled-components").Keyframes;
+export declare const fadeInRightBig: import("styled-components").Keyframes;
+export declare const fadeInTopLeft: import("styled-components").Keyframes;
+export declare const fadeInTopRight: import("styled-components").Keyframes;
+export declare const fadeInUp: import("styled-components").Keyframes;
+export declare const fadeInUpBig: import("styled-components").Keyframes;

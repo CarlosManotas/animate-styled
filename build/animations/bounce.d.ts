@@ -1,0 +1,11 @@
+export declare const bounce: import("styled-components").Keyframes;
+export declare const bounceIn: import("styled-components").Keyframes;
+export declare const bounceInDown: import("styled-components").Keyframes;
+export declare const bounceInLeft: import("styled-components").Keyframes;
+export declare const bounceInRight: import("styled-components").Keyframes;
+export declare const bounceInUp: import("styled-components").Keyframes;
+export declare const bounceOut: import("styled-components").Keyframes;
+export declare const bounceOutDown: import("styled-components").Keyframes;
+export declare const bounceOutLeft: import("styled-components").Keyframes;
+export declare const bounceOutRight: import("styled-components").Keyframes;
+export declare const bounceOutUp: import("styled-components").Keyframes;

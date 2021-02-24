@@ -1,0 +1,10 @@
+export declare const rotateIn: import("styled-components").Keyframes;
+export declare const rotateInDownLeft: import("styled-components").Keyframes;
+export declare const rotateInDownRight: import("styled-components").Keyframes;
+export declare const rotateInUpLeft: import("styled-components").Keyframes;
+export declare const rotateInUpRight: import("styled-components").Keyframes;
+export declare const rotateOut: import("styled-components").Keyframes;
+export declare const rotateOutDownLeft: import("styled-components").Keyframes;
+export declare const rotateOutDownRight: import("styled-components").Keyframes;
+export declare const rotateOutUpLeft: import("styled-components").Keyframes;
+export declare const rotateOutUpRight: import("styled-components").Keyframes;
