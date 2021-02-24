@@ -159,12 +159,21 @@ const AnimationFlow = styled.div<AnimateStyledProps>`
   ${(props) => props.name && setAnimation};
 `;
 
+type TimingFuctionValues =
+  | 'ease'
+  | 'ease-in'
+  | 'ease-out'
+  | 'ease-in-out'
+  | 'linear'
+  | 'step-start'
+  | 'step-end';
+
 interface AnimationProps {
   name: NamesAnimation;
   duration: string;
-  timingFunction: string;
+  timingFunction: TimingFuctionValues | string;
   delay: string;
-  iterationCount: number;
+  iterationCount: number | 'infinite';
   direction: string;
   fillMode: string;
   playState: string;

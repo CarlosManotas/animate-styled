@@ -26,12 +26,13 @@ declare type Specials = 'hinge' | 'jackInTheBox' | 'rollIn' | 'rollOut';
 declare type ZoomingEntrances = 'zoomIn' | 'zoomInDown' | 'zoomInLeft' | 'zoomInRight' | 'zoomInUp';
 declare type ZoomingExits = 'zoomOut' | 'zoomOutDown' | 'zoomOutLeft' | 'zoomOutRight' | 'zoomOutUp';
 declare type NamesAnimation = AttentionSeekers | BackEntrances | BackExits | BouncingEntrances | BouncingExits | FadingEntrances | FadingExits | Flippers | LightSpeed | RotatingEntrances | RotatingExits | SlidingEntrances | SlidingExits | Specials | ZoomingEntrances | ZoomingExits;
+declare type TimingFuctionValues = 'ease' | 'ease-in' | 'ease-out' | 'ease-in-out' | 'linear' | 'step-start' | 'step-end';
 interface AnimationProps {
     name: NamesAnimation;
     duration: string;
-    timingFunction: string;
+    timingFunction: TimingFuctionValues | string;
     delay: string;
-    iterationCount: number;
+    iterationCount: number | 'infinite';
     direction: string;
     fillMode: string;
     playState: string;
