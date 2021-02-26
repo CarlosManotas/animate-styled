@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { ReactNode } from 'react';
 /**
  *  @keyframes duration
@@ -11,7 +12,7 @@ import { ReactNode } from 'react';
  */
 declare type AttentionSeekers = 'bounce' | 'flash' | 'headShake' | 'heartBeat' | 'jello' | 'pulse' | 'rubberBand' | 'shake' | 'shakeX' | 'shakeY' | 'swing' | 'tada' | 'wobble';
 declare type BackEntrances = 'backInDown' | 'backInLeft' | 'backInRight' | 'backInUp';
-declare type BackExits = 'backOutDown' | 'backOutRight' | 'backOutUp';
+declare type BackExits = 'backOutDown' | 'backOutLeft' | 'backOutRight' | 'backOutUp';
 declare type BouncingEntrances = 'bounceIn' | 'bounceInDown' | 'bounceInLeft' | 'bounceInRight' | 'bounceInUp';
 declare type BouncingExits = 'bounceOut' | 'bounceOutDown' | 'bounceOutLeft' | 'bounceOutRight' | 'bounceOutUp';
 declare type FadingEntrances = 'fadeIn' | 'fadeInBottomLeft' | 'fadeInBottomRight' | 'fadeInDown' | 'fadeInDownBig' | 'fadeInLeft' | 'fadeInLeftBig' | 'fadeInRight' | 'fadeInRightBig' | 'fadeInTopLeft' | 'fadeInTopRight' | 'fadeInUp' | 'fadeInUpBig';
@@ -43,6 +44,7 @@ interface AnimateStyledProps extends AnimationProps {
     opacity: number;
 }
 interface AllAnimateProps extends AnimateStyledProps {
+    style?: React.CSSProperties;
     children: ReactNode;
 }
 declare function AnimateStyled(props: AllAnimateProps): JSX.Element;

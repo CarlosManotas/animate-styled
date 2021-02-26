@@ -31,7 +31,7 @@ type AttentionSeekers =
 
 type BackEntrances = 'backInDown' | 'backInLeft' | 'backInRight' | 'backInUp';
 
-type BackExits = 'backOutDown' | 'backOutRight' | 'backOutUp';
+type BackExits = 'backOutDown' | 'backOutLeft' | 'backOutRight' | 'backOutUp';
 
 type BouncingEntrances =
   | 'bounceIn'
@@ -186,6 +186,7 @@ interface AnimateStyledProps extends AnimationProps {
 }
 
 interface AllAnimateProps extends AnimateStyledProps {
+  style?: React.CSSProperties;
   children: ReactNode;
 }
 

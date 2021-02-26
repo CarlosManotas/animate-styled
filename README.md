@@ -53,89 +53,69 @@ render(){
 | transformOrigin | center | String | center, 50%, top bottom, 10% 80% ...|
 | backfaceVisibility | hidden | String | hidden, visible |
 | opacity | 0 | Number | 0 -> 1 |
+| style | undefined | React.CSSProperties | |
+| children | Hello World | ReactNode | 
 
 ## Names of animations
 For test all animation click [here](https://carlosmanotas.github.io/animate-styled/)
 
-| ﻿Name | Use |
-|--------|-------------|
-| bounce | `name="bounce"` |
-| flash | `name="flash"` |
-| pulse |`name="pulse"` |
-| rubberBand |`name="rubberBand"` |
-| shake |`name="shake"` |
-| headShake |`name="headShake"` |
-| swing |`name="swing"` |
-| tada |`name="tada"` |
-| wobble |`name="wobble"` |
-| jello |`name="jello"` |
-| bounceIn |`name="bounceIn"` |
-| bounceInDown |`name="bounceInDown"` |
-| bounceInLeft |`name="bounceInLeft"` |
-| bounceInRight |`name="bounceInRight"` |
-| bounceInUp |`name="bounceInUp"` |
-| bounceOut |`name="bounceOut"` |
-| bounceOutDown |`name="bounceOutDown"` |
-| bounceOutLeft |`name="bounceOutLeft"` |
-| bounceOutRight |`name="bounceOutRight"` |
-| bounceOutUp |`name="bounceOutUp"` |
-| fadeIn |`name="fadeIn"` |
-| fadeInDown |`name="fadeInDown"` |
-| fadeInDownBig |`name="fadeInDownBig"` |
-| fadeInLeft |`name="fadeInLeft"` |
-| fadeInLeftBig |`name="fadeInLeftBig"` |
-| fadeInRight |`name="fadeInRight"` |
-| fadeInRightBig |`name="fadeInRightBig"` |
-| fadeInUp |`name="fadeInUp"` |
-| fadeInUpBig |`name="fadeInUpBig"` |
-| fadeOut |`name="fadeOut"` |
-| fadeOutDown |`name="fadeOutDown"` |
-| fadeOutDownBig |`name="fadeOutDownBig"` |
-| fadeOutLeft |`name="fadeOutLeft"` |
-| fadeOutLeftBig |`name="fadeOutLeftBig"` |
-| fadeOutRight |`name="fadeOutRight"` |
-| fadeOutRightBig |`name="fadeOutRightBig"` |
-| fadeOutUp |`name="fadeOutUp"` |
-| fadeOutUpBig |`name="fadeOutUpBig"` |
-| flip | `name="flip"` |
-| flipInX |`name="flipInX"` |
-| flipInY |`name="flipInY"` |
-| flipOutX |`name="flipOutX"` |
-| flipOutY |`name="flipOutY"` |
-| lightSpeedIn |`name="lightSpeedIn"` |
-| lightSpeedOut |`name="lightSpeedOut"` |
-| rotateIn |`name="rotateIn"` |
-| rotateInDownLeft |`name="rotateInDownLeft"` |
-| rotateInDownRight |`name="rotateInDownRight"` |
-| rotateInUpLeft |`name="rotateInUpLeft"` |
-| rotateInUpRight |`name="rotateInUpRight"` |
-| rotateOut |`name="rotateOut"` |
-| rotateOutDownLeft |`name="rotateOutDownLeft"` |
-| rotateOutDownRight |`name="rotateOutDownRight"` |
-| rotateOutUpLeft |`name="rotateOutUpLeft"` |
-| rotateOutUpRight |`name="rotateOutUpRight"` |
-| hinge |`name="hinge"` |
-| jackInTheBox |`name="jackInTheBox"` |
-| rollIn |`name="rollIn"` |
-| rollOut |`name="rollOut"` |
-| zoomIn |`name="zoomIn"` |
-| zoomInDown |`name="zoomInDown"` |
-| zoomInLeft |`name="zoomInLeft"` |
-| zoomInRight |`name="zoomInRight"` |
-| zoomInUp |`name="zoomInUp"` |
-| zoomOut |`name="zoomOut"` |
-| zoomOutDown |`name="zoomOutDown"` |
-| zoomOutLeft |`name="zoomOutLeft"` |
-| zoomOutRight |`name="zoomOutRight"` |
-| zoomOutUp |`name="zoomOutUp"` |
-| slideInDown |`name="slideInDown"` |
-| slideInLeft |`name="slideInLeft"` |
-| slideInRight |`name="slideInRight"` |
-| slideInUp |`name="slideInUp"` |
-| slideOutDown |`name="slideOutDown"` |
-| slideOutLeft |`name="slideOutLeft"` |
-| slideOutRight |`name="slideOutRight"` |
-| slideOutUp |`name="slideOutUp"` |
+---
+
+| `Attention Seekers`  | `Specials` | `Flippers` | `LightSpeed` |
+|--------------------|----------|----------|------------|
+  | bounce | hinge | flip | lightSpeedInLeft |
+  | flash | jackInTheBox | flipInX | lightSpeedInRight |
+  | headShake | rollIn | flipInY | lightSpeedOutLeft |
+  | heartBeat | rollOut | flipOutX | lightSpeedOutRight |
+  | jello |     | flipOutY | 
+  | pulse |      
+  | rubberBand |  
+  | shake |
+  | shakeX |
+  | shakeY |
+  | swing |
+  | tada |
+  | wobble |
+
+---
+
+ | `BackEntrances` | `BackExits` | `BouncingEntrances` | `BouncingExits` |
+ |---------------|-----------|-------------------|---------------|
+ | backInDown | backOutDown | bounceIn | bounceOut |
+ | backInLeft | backOutLeft | bounceInDown | bounceOutDown |
+ | backInRight | backOutRight | bounceInLeft | bounceOutLeft |
+ | backInUp | backOutUp | bounceInRight | bounceOutRight |
+ |          |            | bounceInUp | bounceOutUp |
+
+---
+
+| `FadingEntrances` | `FadingExits` | `RotatingEntrances` | `RotatingExits` |
+|-------------------|---------------|---------------------|-----------------|
+| fadeIn | fadeOut | rotateIn | rotateOut
+  | fadeInBottomLeft | fadeOutBottomLeft | rotateInDownLeft | rotateOutDownLeft
+  | fadeInBottomRight | fadeOutBottomRight | rotateInDownRight | rotateOutDownRight
+  | fadeInDown | fadeOutDown | rotateInUpLeft | rotateOutUpLeft
+  | fadeInDownBig | fadeOutDownBig | rotateInUpRight | rotateOutUpRight
+  | fadeInLeft | fadeOutLeft
+  | fadeInLeftBig | fadeOutLeftBig
+  | fadeInRight | fadeOutRight
+  | fadeInRightBig | fadeOutRightBig
+  | fadeInTopLeft | fadeOutTopLeft
+  | fadeInTopRight | fadeOutTopRight
+  | fadeInUp | fadeOutUp
+  | fadeInUpBig | fadeOutUpBig
+  
+---
+
+| `SlidingEntrances` | `SlidingExits` | `ZoomingEntrances` | `ZoomingExits` |
+|--------------------|----------------|--------------------|----------------|
+| slideInDown | slideOutDown | zoomIn | zoomOut
+| slideInLeft | slideOutLeft | zoomInDown | zoomOutDown
+| slideInRight | slideOutRight | zoomInLeft | zoomOutLeft
+| slideInUp | slideOutUp | zoomInRight | zoomOutRight
+|       |        | zoomInUp | zoomOutUp
+  
+---
 
 ## Import multiple animations
 ```javascript
