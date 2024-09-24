@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Component should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-blHHSb leFnXB"
+  >
+    <h1>
+      Hello World
+    </h1>
+  </div>
+</div>
+`;
