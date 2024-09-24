@@ -10,18 +10,11 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.tsx"),
       name: "AnimateStyled",
-      formats: ["es", "cjs", "umd"],
-      fileName: "animate-styled",
+      formats: ["es"],
+      fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "styled-components"],
-      output: {
-        globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
-          "styled-components": "styled",
-        },
-      },
+      external: ["react", "styled-components"],
     },
   },
   test: {
