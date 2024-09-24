@@ -16,7 +16,8 @@
   },
   "scripts": {
     "build": "vite build",
-    "test": "vitest"
+    "test": "vitest",
+    "prepublishOnly": "pnpm run build"
   },
   "peerDependencies": {
     "react": "18.x",
