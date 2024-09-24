@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
-import * as React from 'react';
-import * as allAnimate from './animations';
-import { ReactNode } from 'react';
+import * as React from "react";
+import { ReactNode } from "react";
+import styled, { css } from "styled-components";
+import * as allAnimate from "./animations";
 
 /**
  *  @keyframes duration
@@ -15,117 +15,117 @@ import { ReactNode } from 'react';
  */
 
 type AttentionSeekers =
-  | 'bounce'
-  | 'flash'
-  | 'headShake'
-  | 'heartBeat'
-  | 'jello'
-  | 'pulse'
-  | 'rubberBand'
-  | 'shake'
-  | 'shakeX'
-  | 'shakeY'
-  | 'swing'
-  | 'tada'
-  | 'wobble';
+  | "bounce"
+  | "flash"
+  | "headShake"
+  | "heartBeat"
+  | "jello"
+  | "pulse"
+  | "rubberBand"
+  | "shake"
+  | "shakeX"
+  | "shakeY"
+  | "swing"
+  | "tada"
+  | "wobble";
 
-type BackEntrances = 'backInDown' | 'backInLeft' | 'backInRight' | 'backInUp';
+type BackEntrances = "backInDown" | "backInLeft" | "backInRight" | "backInUp";
 
-type BackExits = 'backOutDown' | 'backOutLeft' | 'backOutRight' | 'backOutUp';
+type BackExits = "backOutDown" | "backOutLeft" | "backOutRight" | "backOutUp";
 
 type BouncingEntrances =
-  | 'bounceIn'
-  | 'bounceInDown'
-  | 'bounceInLeft'
-  | 'bounceInRight'
-  | 'bounceInUp';
+  | "bounceIn"
+  | "bounceInDown"
+  | "bounceInLeft"
+  | "bounceInRight"
+  | "bounceInUp";
 
 type BouncingExits =
-  | 'bounceOut'
-  | 'bounceOutDown'
-  | 'bounceOutLeft'
-  | 'bounceOutRight'
-  | 'bounceOutUp';
+  | "bounceOut"
+  | "bounceOutDown"
+  | "bounceOutLeft"
+  | "bounceOutRight"
+  | "bounceOutUp";
 
 type FadingEntrances =
-  | 'fadeIn'
-  | 'fadeInBottomLeft'
-  | 'fadeInBottomRight'
-  | 'fadeInDown'
-  | 'fadeInDownBig'
-  | 'fadeInLeft'
-  | 'fadeInLeftBig'
-  | 'fadeInRight'
-  | 'fadeInRightBig'
-  | 'fadeInTopLeft'
-  | 'fadeInTopRight'
-  | 'fadeInUp'
-  | 'fadeInUpBig';
+  | "fadeIn"
+  | "fadeInBottomLeft"
+  | "fadeInBottomRight"
+  | "fadeInDown"
+  | "fadeInDownBig"
+  | "fadeInLeft"
+  | "fadeInLeftBig"
+  | "fadeInRight"
+  | "fadeInRightBig"
+  | "fadeInTopLeft"
+  | "fadeInTopRight"
+  | "fadeInUp"
+  | "fadeInUpBig";
 
 type FadingExits =
-  | 'fadeOut'
-  | 'fadeOutBottomLeft'
-  | 'fadeOutBottomRight'
-  | 'fadeOutDown'
-  | 'fadeOutDownBig'
-  | 'fadeOutLeft'
-  | 'fadeOutLeftBig'
-  | 'fadeOutRight'
-  | 'fadeOutRightBig'
-  | 'fadeOutTopLeft'
-  | 'fadeOutTopRight'
-  | 'fadeOutUp'
-  | 'fadeOutUpBig';
+  | "fadeOut"
+  | "fadeOutBottomLeft"
+  | "fadeOutBottomRight"
+  | "fadeOutDown"
+  | "fadeOutDownBig"
+  | "fadeOutLeft"
+  | "fadeOutLeftBig"
+  | "fadeOutRight"
+  | "fadeOutRightBig"
+  | "fadeOutTopLeft"
+  | "fadeOutTopRight"
+  | "fadeOutUp"
+  | "fadeOutUpBig";
 
-type Flippers = 'flip' | 'flipInX' | 'flipInY' | 'flipOutX' | 'flipOutY';
+type Flippers = "flip" | "flipInX" | "flipInY" | "flipOutX" | "flipOutY";
 
 type LightSpeed =
-  | 'lightSpeedInLeft'
-  | 'lightSpeedInRight'
-  | 'lightSpeedOutLeft'
-  | 'lightSpeedOutRight';
+  | "lightSpeedInLeft"
+  | "lightSpeedInRight"
+  | "lightSpeedOutLeft"
+  | "lightSpeedOutRight";
 
 type RotatingEntrances =
-  | 'rotateIn'
-  | 'rotateInDownLeft'
-  | 'rotateInDownRight'
-  | 'rotateInUpLeft'
-  | 'rotateInUpRight';
+  | "rotateIn"
+  | "rotateInDownLeft"
+  | "rotateInDownRight"
+  | "rotateInUpLeft"
+  | "rotateInUpRight";
 
 type RotatingExits =
-  | 'rotateOut'
-  | 'rotateOutDownLeft'
-  | 'rotateOutDownRight'
-  | 'rotateOutUpLeft'
-  | 'rotateOutUpRight';
+  | "rotateOut"
+  | "rotateOutDownLeft"
+  | "rotateOutDownRight"
+  | "rotateOutUpLeft"
+  | "rotateOutUpRight";
 
 type SlidingEntrances =
-  | 'slideInDown'
-  | 'slideInLeft'
-  | 'slideInRight'
-  | 'slideInUp';
+  | "slideInDown"
+  | "slideInLeft"
+  | "slideInRight"
+  | "slideInUp";
 
 type SlidingExits =
-  | 'slideOutDown'
-  | 'slideOutLeft'
-  | 'slideOutRight'
-  | 'slideOutUp';
+  | "slideOutDown"
+  | "slideOutLeft"
+  | "slideOutRight"
+  | "slideOutUp";
 
-type Specials = 'hinge' | 'jackInTheBox' | 'rollIn' | 'rollOut';
+type Specials = "hinge" | "jackInTheBox" | "rollIn" | "rollOut";
 
 type ZoomingEntrances =
-  | 'zoomIn'
-  | 'zoomInDown'
-  | 'zoomInLeft'
-  | 'zoomInRight'
-  | 'zoomInUp';
+  | "zoomIn"
+  | "zoomInDown"
+  | "zoomInLeft"
+  | "zoomInRight"
+  | "zoomInUp";
 
 type ZoomingExits =
-  | 'zoomOut'
-  | 'zoomOutDown'
-  | 'zoomOutLeft'
-  | 'zoomOutRight'
-  | 'zoomOutUp';
+  | "zoomOut"
+  | "zoomOutDown"
+  | "zoomOutLeft"
+  | "zoomOutRight"
+  | "zoomOutUp";
 
 type NamesAnimation =
   | AttentionSeekers
@@ -160,29 +160,29 @@ const AnimationFlow = styled.div<AnimateStyledProps>`
 `;
 
 type TimingFuctionValues =
-  | 'ease'
-  | 'ease-in'
-  | 'ease-out'
-  | 'ease-in-out'
-  | 'linear'
-  | 'step-start'
-  | 'step-end';
+  | "ease"
+  | "ease-in"
+  | "ease-out"
+  | "ease-in-out"
+  | "linear"
+  | "step-start"
+  | "step-end";
 
 interface AnimationProps {
   name: NamesAnimation;
-  duration: string;
-  timingFunction: TimingFuctionValues | string;
-  delay: string;
-  iterationCount: number | 'infinite';
-  direction: string;
-  fillMode: string;
-  playState: string;
+  duration?: string;
+  timingFunction?: TimingFuctionValues | string;
+  delay?: string;
+  iterationCount?: number | "infinite";
+  direction?: string;
+  fillMode?: string;
+  playState?: string;
 }
 
 interface AnimateStyledProps extends AnimationProps {
-  transformOrigin: string;
-  backfaceVisibility: string;
-  opacity: number;
+  transformOrigin?: string;
+  backfaceVisibility?: string;
+  opacity?: number;
 }
 
 interface AllAnimateProps extends AnimateStyledProps {
@@ -190,22 +190,35 @@ interface AllAnimateProps extends AnimateStyledProps {
   children: ReactNode;
 }
 
-export default function AnimateStyled(props: AllAnimateProps) {
-  const { children, ...rest } = props;
-  return <AnimationFlow {...rest}>{children}</AnimationFlow>;
+export default function AnimateStyled({
+  name = "shake",
+  duration = "2s",
+  timingFunction = "linear",
+  delay = "0s",
+  iterationCount = "infinite",
+  direction = "normal",
+  fillMode = "none",
+  playState = "running",
+  transformOrigin = "center",
+  backfaceVisibility = "hidden",
+  opacity = 1,
+  children = <h1>Hello World</h1>,
+}: AllAnimateProps) {
+  return (
+    <AnimationFlow
+      name={name}
+      duration={duration}
+      timingFunction={timingFunction}
+      delay={delay}
+      iterationCount={iterationCount}
+      direction={direction}
+      fillMode={fillMode}
+      playState={playState}
+      transformOrigin={transformOrigin}
+      backfaceVisibility={backfaceVisibility}
+      opacity={opacity}
+    >
+      {children}
+    </AnimationFlow>
+  );
 }
-
-AnimateStyled.defaultProps = {
-  name: 'shake',
-  duration: '2s',
-  timingFunction: 'linear',
-  delay: '0s',
-  iterationCount: 'infinite',
-  direction: 'normal',
-  fillMode: 'none',
-  playState: 'running',
-  transformOrigin: 'center',
-  backfaceVisibility: 'hidden',
-  opacity: 1,
-  children: 'Hello World',
-};

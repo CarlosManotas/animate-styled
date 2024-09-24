@@ -1,0 +1,13 @@
+export declare const fadeOut: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutBottomLeft: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutBottomRight: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutDown: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutDownBig: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutLeft: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutLeftBig: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutRight: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutRightBig: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutTopLeft: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutTopRight: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutUp: import('styled-components/dist/models/Keyframes').default;
+export declare const fadeOutUpBig: import('styled-components/dist/models/Keyframes').default;
