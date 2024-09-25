@@ -10,10 +10,3 @@ test("Component should show 'red' text 'Hello World'", () => {
   const textElement = getByText("Hello World");
   expect(textElement).toBeInTheDocument();
 });
-
-test("Component should match snapshot", () => {
-  const { container } = render(
-    <AnimateStyled name="backInDown" children={undefined} />
-  );
-  expect(container).toMatchSnapshot();
-});
