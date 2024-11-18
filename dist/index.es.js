@@ -1,6 +1,6 @@
 import St from "react";
 import ur, { keyframes as r, css as mr } from "styled-components";
-var Q = { exports: {} }, A = {};
+var Q = { exports: {} }, L = {};
 /**
  * @license React
  * react-jsx-runtime.production.min.js
@@ -12,7 +12,7 @@ var Q = { exports: {} }, A = {};
  */
 var wt;
 function pr() {
-  if (wt) return A;
+  if (wt) return L;
   wt = 1;
   var f = St, _ = Symbol.for("react.element"), j = Symbol.for("react.fragment"), R = Object.prototype.hasOwnProperty, S = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, I = { key: !0, ref: !0, __self: !0, __source: !0 };
   function E(h, u, O) {
@@ -22,9 +22,9 @@ function pr() {
     if (h && h.defaultProps) for (p in u = h.defaultProps, u) b[p] === void 0 && (b[p] = u[p]);
     return { $$typeof: _, type: h, key: w, ref: z, props: b, _owner: S.current };
   }
-  return A.Fragment = j, A.jsx = E, A.jsxs = E, A;
+  return L.Fragment = j, L.jsx = E, L.jsxs = E, L;
 }
-var F = {};
+var A = {};
 /**
  * @license React
  * react-jsx-runtime.development.js
@@ -38,23 +38,23 @@ var kt;
 function yr() {
   return kt || (kt = 1, process.env.NODE_ENV !== "production" && function() {
     var f = St, _ = Symbol.for("react.element"), j = Symbol.for("react.portal"), R = Symbol.for("react.fragment"), S = Symbol.for("react.strict_mode"), I = Symbol.for("react.profiler"), E = Symbol.for("react.provider"), h = Symbol.for("react.context"), u = Symbol.for("react.forward_ref"), O = Symbol.for("react.suspense"), p = Symbol.for("react.suspense_list"), b = Symbol.for("react.memo"), w = Symbol.for("react.lazy"), z = Symbol.for("react.offscreen"), tt = Symbol.iterator, It = "@@iterator";
-    function Yt(t) {
+    function Ct(t) {
       if (t === null || typeof t != "object")
         return null;
       var a = tt && t[tt] || t[It];
       return typeof a == "function" ? a : null;
     }
-    var Y = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+    var C = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
     function m(t) {
       {
         for (var a = arguments.length, e = new Array(a > 1 ? a - 1 : 0), n = 1; n < a; n++)
           e[n - 1] = arguments[n];
-        Ct("error", t, e);
+        Pt("error", t, e);
       }
     }
-    function Ct(t, a, e) {
+    function Pt(t, a, e) {
       {
-        var n = Y.ReactDebugCurrentFrame, i = n.getStackAddendum();
+        var n = C.ReactDebugCurrentFrame, i = n.getStackAddendum();
         i !== "" && (a += "%s", e = e.concat([i]));
         var c = e.map(function(s) {
           return String(s);
@@ -62,16 +62,16 @@ function yr() {
         c.unshift("Warning: " + a), Function.prototype.apply.call(console[t], console, c);
       }
     }
-    var Pt = !1, jt = !1, Dt = !1, Xt = !1, Lt = !1, rt;
+    var Yt = !1, jt = !1, Dt = !1, Xt = !1, Ft = !1, rt;
     rt = Symbol.for("react.module.reference");
-    function At(t) {
-      return !!(typeof t == "string" || typeof t == "function" || t === R || t === I || Lt || t === S || t === O || t === p || Xt || t === z || Pt || jt || Dt || typeof t == "object" && t !== null && (t.$$typeof === w || t.$$typeof === b || t.$$typeof === E || t.$$typeof === h || t.$$typeof === u || // This needs to include all possible module reference object
+    function Lt(t) {
+      return !!(typeof t == "string" || typeof t == "function" || t === R || t === I || Ft || t === S || t === O || t === p || Xt || t === z || Yt || jt || Dt || typeof t == "object" && t !== null && (t.$$typeof === w || t.$$typeof === b || t.$$typeof === E || t.$$typeof === h || t.$$typeof === u || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
       t.$$typeof === rt || t.getModuleId !== void 0));
     }
-    function Ft(t, a, e) {
+    function At(t, a, e) {
       var n = t.displayName;
       if (n)
         return n;
@@ -111,7 +111,7 @@ function yr() {
             var e = t;
             return at(e._context) + ".Provider";
           case u:
-            return Ft(t, t.render, "ForwardRef");
+            return At(t, t.render, "ForwardRef");
           case b:
             var n = t.displayName || null;
             return n !== null ? n : x(t.type) || "Memo";
@@ -188,7 +188,7 @@ function yr() {
         D < 0 && m("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
       }
     }
-    var M = Y.ReactCurrentDispatcher, V;
+    var M = C.ReactCurrentDispatcher, V;
     function $(t, a, e) {
       {
         if (V === void 0)
@@ -275,7 +275,7 @@ function yr() {
       } finally {
         N = !1, M.current = c, $t(), Error.prepareStackTrace = i;
       }
-      var P = t ? t.displayName || t.name : "", T = P ? $(P) : "";
+      var Y = t ? t.displayName || t.name : "", T = Y ? $(Y) : "";
       return typeof t == "function" && U.set(t, T), T;
     }
     function Wt(t, a, e) {
@@ -314,7 +314,7 @@ function yr() {
         }
       return "";
     }
-    var X = Object.prototype.hasOwnProperty, ut = {}, mt = Y.ReactDebugCurrentFrame;
+    var X = Object.prototype.hasOwnProperty, ut = {}, mt = C.ReactDebugCurrentFrame;
     function B(t) {
       if (t) {
         var a = t._owner, e = W(t.type, t._source, a ? a.type : null);
@@ -365,7 +365,7 @@ function yr() {
       if (Jt(t))
         return m("The provided key is an unsupported type %s. This value must be coerced to a string before before using it here.", Nt(t)), pt(t);
     }
-    var L = Y.ReactCurrentOwner, qt = {
+    var F = C.ReactCurrentOwner, qt = {
       key: !0,
       ref: !0,
       __self: !0,
@@ -389,9 +389,9 @@ function yr() {
       return t.key !== void 0;
     }
     function Ht(t, a) {
-      if (typeof t.ref == "string" && L.current && a && L.current.stateNode !== a) {
-        var e = x(L.current.type);
-        q[e] || (m('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', x(L.current.type), t.ref), q[e] = !0);
+      if (typeof t.ref == "string" && F.current && a && F.current.stateNode !== a) {
+        var e = x(F.current.type);
+        q[e] || (m('Component "%s" contains the string ref "%s". Support for string refs will be removed in a future major release. This case cannot be automatically converted to an arrow function. We ask you to manually fix this case by using useRef() or createRef() instead. Learn more about using refs safely here: https://reactjs.org/link/strict-mode-string-ref', x(F.current.type), t.ref), q[e] = !0);
       }
     }
     function Zt(t, a) {
@@ -460,11 +460,11 @@ function yr() {
           var d = typeof t == "function" ? t.displayName || t.name || "Unknown" : t;
           o && Zt(s, d), y && Qt(s, d);
         }
-        return tr(t, o, y, i, n, L.current, s);
+        return tr(t, o, y, i, n, F.current, s);
       }
     }
-    var K = Y.ReactCurrentOwner, bt = Y.ReactDebugCurrentFrame;
-    function C(t) {
+    var K = C.ReactCurrentOwner, bt = C.ReactDebugCurrentFrame;
+    function P(t) {
       if (t) {
         var a = t._owner, e = W(t.type, t._source, a ? a.type : null);
         bt.setExtraStackFrame(e);
@@ -514,7 +514,7 @@ Check the top-level render call using <` + e + ">.");
           return;
         ht[e] = !0;
         var n = "";
-        t && t._owner && t._owner !== K.current && (n = " It was passed a child from " + x(t._owner.type) + "."), C(t), m('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', e, n), C(null);
+        t && t._owner && t._owner !== K.current && (n = " It was passed a child from " + x(t._owner.type) + "."), P(t), m('Each child in a list should have a unique "key" prop.%s%s See https://reactjs.org/link/warning-keys for more information.', e, n), P(null);
       }
     }
     function Ot(t, a) {
@@ -529,7 +529,7 @@ Check the top-level render call using <` + e + ">.");
         else if (H(t))
           t._store && (t._store.validated = !0);
         else if (t) {
-          var i = Yt(t);
+          var i = Ct(t);
           if (typeof i == "function" && i !== t.entries)
             for (var c = i.call(t), s; !(s = c.next()).done; )
               H(s.value) && Rt(s.value, a);
@@ -566,17 +566,17 @@ Check the top-level render call using <` + e + ">.");
         for (var a = Object.keys(t.props), e = 0; e < a.length; e++) {
           var n = a[e];
           if (n !== "children" && n !== "key") {
-            C(t), m("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", n), C(null);
+            P(t), m("Invalid prop `%s` supplied to `React.Fragment`. React.Fragment can only have `key` and `children` props.", n), P(null);
             break;
           }
         }
-        t.ref !== null && (C(t), m("Invalid attribute `ref` supplied to `React.Fragment`."), C(null));
+        t.ref !== null && (P(t), m("Invalid attribute `ref` supplied to `React.Fragment`."), P(null));
       }
     }
     var _t = {};
     function Et(t, a, e, n, i, c) {
       {
-        var s = At(t);
+        var s = Lt(t);
         if (!s) {
           var o = "";
           (t === void 0 || typeof t == "object" && t !== null && Object.keys(t).length === 0) && (o += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.");
@@ -593,8 +593,8 @@ Check the top-level render call using <` + e + ">.");
           if (v !== void 0)
             if (n)
               if (J(v)) {
-                for (var P = 0; P < v.length; P++)
-                  Ot(v[P], t);
+                for (var Y = 0; Y < v.length; Y++)
+                  Ot(v[Y], t);
                 Object.freeze && Object.freeze(v);
               } else
                 m("React.jsx: Static children should always be an array. You are likely explicitly calling React.jsxs or React.jsxDEV. Use the Babel transform instead.");
@@ -625,8 +625,8 @@ React keys must be passed directly to JSX without using spread:
       return Et(t, a, e, !1);
     }
     var cr = ir, fr = sr;
-    F.Fragment = R, F.jsx = cr, F.jsxs = fr;
-  }()), F;
+    A.Fragment = R, A.jsx = cr, A.jsxs = fr;
+  }()), A;
 }
 process.env.NODE_ENV === "production" ? Q.exports = pr() : Q.exports = yr();
 var Tt = Q.exports;
@@ -918,7 +918,7 @@ const gr = r`
     transform: scale(1);
     opacity: 1;
   }
-`, Yr = r`
+`, Cr = r`
   0% {
     transform: translateX(-2000px) scale(0.7);
     opacity: 0.7;
@@ -933,7 +933,7 @@ const gr = r`
     transform: scale(1);
     opacity: 1;
   }
-`, Cr = r`
+`, Pr = r`
   0% {
     transform: translateX(2000px) scale(0.7);
     opacity: 0.7;
@@ -948,7 +948,7 @@ const gr = r`
     transform: scale(1);
     opacity: 1;
   }
-`, Pr = r`
+`, Yr = r`
   0% {
     transform: translateY(1200px) scale(0.7);
     opacity: 0.7;
@@ -1008,7 +1008,7 @@ const gr = r`
     transform: translateX(2000px) scale(0.7);
     opacity: 0.7;
   }
-`, Lr = r`
+`, Fr = r`
   0% {
     transform: scale(1);
     opacity: 1;
@@ -1023,7 +1023,7 @@ const gr = r`
     transform: translateY(-700px) scale(0.7);
     opacity: 0.7;
   }
-`, Ar = r`
+`, Lr = r`
   from,
   20%,
   40%,
@@ -1059,7 +1059,7 @@ const gr = r`
     opacity: 1;
     transform: scale3d(1, 1, 1);
   }
-`, Fr = r`
+`, Ar = r`
   from,
   60%,
   75%,
@@ -1662,16 +1662,6 @@ const gr = r`
     transform: translate3d(0, 0, 0);
     opacity: 1;
   }
-`, Ya = r`
-  from {
-    transform: rotate3d(0, 0, 1, 45deg);
-    opacity: 0;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
 `, Ca = r`
   from {
     transform: rotate3d(0, 0, 1, 45deg);
@@ -1683,6 +1673,16 @@ const gr = r`
     opacity: 1;
   }
 `, Pa = r`
+  from {
+    transform: rotate3d(0, 0, 1, 45deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+`, Ya = r`
   from {
     transform: rotate3d(0, 0, 1, -90deg);
     opacity: 0;
@@ -1719,7 +1719,7 @@ const gr = r`
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
-`, La = r`
+`, Fa = r`
   from {
     opacity: 1;
   }
@@ -1728,7 +1728,7 @@ const gr = r`
     transform: rotate3d(0, 0, 1, -45deg);
     opacity: 0;
   }
-`, Aa = r`
+`, La = r`
   from {
     opacity: 1;
   }
@@ -1737,7 +1737,7 @@ const gr = r`
     transform: rotate3d(0, 0, 1, 90deg);
     opacity: 0;
   }
-`, Fa = r`
+`, Aa = r`
   from {
     transform: translate3d(0, -100%, 0);
     visibility: visible;
@@ -1986,16 +1986,16 @@ const gr = r`
 `, se = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
   backInDown: Ir,
-  backInLeft: Yr,
-  backInRight: Cr,
-  backInUp: Pr,
+  backInLeft: Cr,
+  backInRight: Pr,
+  backInUp: Yr,
   backOutDown: jr,
   backOutLeft: Dr,
   backOutRight: Xr,
-  backOutUp: Lr,
+  backOutUp: Fr,
   bounce: gr,
-  bounceIn: Ar,
-  bounceInDown: Fr,
+  bounceIn: Lr,
+  bounceInDown: Ar,
   bounceInLeft: zr,
   bounceInRight: $r,
   bounceInUp: Ur,
@@ -2050,19 +2050,19 @@ const gr = r`
   rollOut: Ja,
   rotateIn: Sa,
   rotateInDownLeft: Ia,
-  rotateInDownRight: Ya,
-  rotateInUpLeft: Ca,
-  rotateInUpRight: Pa,
+  rotateInDownRight: Ca,
+  rotateInUpLeft: Pa,
+  rotateInUpRight: Ya,
   rotateOut: ja,
   rotateOutDownLeft: Da,
   rotateOutDownRight: Xa,
-  rotateOutUpLeft: La,
-  rotateOutUpRight: Aa,
+  rotateOutUpLeft: Fa,
+  rotateOutUpRight: La,
   rubberBand: Or,
   shake: _r,
   shakeX: Er,
   shakeY: wr,
-  slideInDown: Fa,
+  slideInDown: Aa,
   slideInLeft: za,
   slideInRight: $a,
   slideInUp: Ua,
@@ -2087,7 +2087,21 @@ const gr = r`
     animation: ${f.duration} ${f.timingFunction} ${f.delay}
       ${f.iterationCount} ${f.direction} ${f.fillMode}
       ${f.playState} ${se[f.name]};
-  `, ce = ur.div`
+  `, ce = ur.div.withConfig({
+  shouldForwardProp: (f) => ![
+    "backfaceVisibility",
+    "transformOrigin",
+    "opacity",
+    "playState",
+    "fillMode",
+    "iterationCount",
+    "timingFunction",
+    "delay",
+    "duration",
+    "direction",
+    "name"
+  ].includes(f)
+})`
   transform-origin: ${(f) => f.transformOrigin};
   backface-visibility: ${(f) => f.backfaceVisibility};
   opacity: ${(f) => f.opacity};
@@ -2126,5 +2140,5 @@ function de({
   );
 }
 export {
-  de as default
+  de as AnimateStyled
 };

@@ -28,7 +28,7 @@ $ npm install animate-styled --save
 
 ```javascript
 ...
-import AnimateStyled from "animate-styled"
+import { AnimateStyled } from "animate-styled"
 ...
 render(){
   return(
@@ -119,7 +119,7 @@ For test all animation click [here](https://carlosmanotas.github.io/animate-styl
 
 ## Import multiple animations
 ```javascript
-import AnimateStyled from "animate-styled";
+import { AnimateStyled } from "animate-styled";
 ...
 render(){
   return(

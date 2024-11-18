@@ -1,5 +1,5 @@
 import { ReactNode } from 'react';
-import * as React from "react";
+import type * as React from "react";
 /**
  *  @keyframes duration
  * | timing-function
@@ -47,5 +47,5 @@ interface AllAnimateProps extends AnimateStyledProps {
     style?: React.CSSProperties;
     children: ReactNode;
 }
-export default function AnimateStyled({ name, duration, timingFunction, delay, iterationCount, direction, fillMode, playState, transformOrigin, backfaceVisibility, opacity, children, }: AllAnimateProps): import("react/jsx-runtime").JSX.Element;
+export declare function AnimateStyled({ name, duration, timingFunction, delay, iterationCount, direction, fillMode, playState, transformOrigin, backfaceVisibility, opacity, children, }: AllAnimateProps): import("react/jsx-runtime").JSX.Element;
 export {};

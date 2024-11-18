@@ -1,5 +1,5 @@
-import * as React from "react";
-import { ReactNode } from "react";
+import type * as React from "react";
+import type { ReactNode } from "react";
 import styled, { css } from "styled-components";
 import * as allAnimate from "./animations";
 
@@ -152,7 +152,22 @@ const setAnimation = (props: AnimationProps) =>
       ${props.playState} ${allAnimate[props.name]};
   `;
 
-const AnimationFlow = styled.div<AnimateStyledProps>`
+const AnimationFlow = styled.div.withConfig({
+  shouldForwardProp: (prop) =>
+    ![
+      "backfaceVisibility",
+      "transformOrigin",
+      "opacity",
+      "playState",
+      "fillMode",
+      "iterationCount",
+      "timingFunction",
+      "delay",
+      "duration",
+      "direction",
+      "name",
+    ].includes(prop),
+})<AnimateStyledProps>`
   transform-origin: ${(props) => props.transformOrigin};
   backface-visibility: ${(props) => props.backfaceVisibility};
   opacity: ${(props) => props.opacity};
@@ -190,7 +205,7 @@ interface AllAnimateProps extends AnimateStyledProps {
   children: ReactNode;
 }
 
-export default function AnimateStyled({
+export function AnimateStyled({
   name = "shake",
   duration = "2s",
   timingFunction = "linear",
