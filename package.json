@@ -1,6 +1,6 @@
 {
   "name": "animate-styled",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "library for animations CSS in react with styled-components",
   "type": "module",
   "files": [

@@ -1,6 +1,5 @@
 import type * as React from "react";
-import type { ReactNode } from "react";
-import styled, { css } from "styled-components";
+import { styled, css } from "styled-components";
 import * as allAnimate from "./animations";
 
 /**
@@ -145,6 +144,20 @@ type NamesAnimation =
   | ZoomingEntrances
   | ZoomingExits;
 
+const ignoredProps = new Set([
+  "backfaceVisibility",
+  "transformOrigin",
+  "opacity",
+  "playState",
+  "fillMode",
+  "iterationCount",
+  "timingFunction",
+  "delay",
+  "duration",
+  "direction",
+  "name",
+]);
+
 const setAnimation = (props: AnimationProps) =>
   css`
     animation: ${props.duration} ${props.timingFunction} ${props.delay}
@@ -153,20 +166,7 @@ const setAnimation = (props: AnimationProps) =>
   `;
 
 const AnimationFlow = styled.div.withConfig({
-  shouldForwardProp: (prop) =>
-    ![
-      "backfaceVisibility",
-      "transformOrigin",
-      "opacity",
-      "playState",
-      "fillMode",
-      "iterationCount",
-      "timingFunction",
-      "delay",
-      "duration",
-      "direction",
-      "name",
-    ].includes(prop),
+  shouldForwardProp: (prop) => !ignoredProps.has(prop),
 })<AnimateStyledProps>`
   transform-origin: ${(props) => props.transformOrigin};
   backface-visibility: ${(props) => props.backfaceVisibility};
@@ -202,7 +202,7 @@ interface AnimateStyledProps extends AnimationProps {
 
 interface AllAnimateProps extends AnimateStyledProps {
   style?: React.CSSProperties;
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export function AnimateStyled({

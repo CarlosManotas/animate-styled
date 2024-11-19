@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import type * as React from "react";
 /**
  *  @keyframes duration
@@ -45,7 +44,7 @@ interface AnimateStyledProps extends AnimationProps {
 }
 interface AllAnimateProps extends AnimateStyledProps {
     style?: React.CSSProperties;
-    children: ReactNode;
+    children: React.ReactNode;
 }
 export declare function AnimateStyled({ name, duration, timingFunction, delay, iterationCount, direction, fillMode, playState, transformOrigin, backfaceVisibility, opacity, children, }: AllAnimateProps): import("react/jsx-runtime").JSX.Element;
 export {};

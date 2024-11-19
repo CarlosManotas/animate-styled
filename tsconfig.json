@@ -6,10 +6,9 @@
     "esModuleInterop": true,
     "module": "ESNext",
     "moduleResolution": "Node",
-    "target": "ESNext",
+    "target": "ES2015",
     "jsx": "react-jsx",
-    "declaration": true, 
-    "declarationDir": "./dist/types", 
+    "declaration": true,
     "sourceMap": true,
     "skipLibCheck": true
   },

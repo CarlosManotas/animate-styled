@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
+      outDir: "dist",
       exclude: ["**/__tests__/**", "**/*.test.*"],
     }),
   ],

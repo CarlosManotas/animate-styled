@@ -1,5 +1,5 @@
 import St from "react";
-import ur, { keyframes as r, css as mr } from "styled-components";
+import { keyframes as r, styled as ur, css as mr } from "styled-components";
 var Q = { exports: {} }, L = {};
 /**
  * @license React
@@ -2083,31 +2083,31 @@ const gr = r`
   zoomOutLeft: ee,
   zoomOutRight: ne,
   zoomOutUp: oe
-}, Symbol.toStringTag, { value: "Module" })), ie = (f) => mr`
+}, Symbol.toStringTag, { value: "Module" })), ie = /* @__PURE__ */ new Set([
+  "backfaceVisibility",
+  "transformOrigin",
+  "opacity",
+  "playState",
+  "fillMode",
+  "iterationCount",
+  "timingFunction",
+  "delay",
+  "duration",
+  "direction",
+  "name"
+]), ce = (f) => mr`
     animation: ${f.duration} ${f.timingFunction} ${f.delay}
       ${f.iterationCount} ${f.direction} ${f.fillMode}
       ${f.playState} ${se[f.name]};
-  `, ce = ur.div.withConfig({
-  shouldForwardProp: (f) => ![
-    "backfaceVisibility",
-    "transformOrigin",
-    "opacity",
-    "playState",
-    "fillMode",
-    "iterationCount",
-    "timingFunction",
-    "delay",
-    "duration",
-    "direction",
-    "name"
-  ].includes(f)
+  `, fe = ur.div.withConfig({
+  shouldForwardProp: (f) => !ie.has(f)
 })`
   transform-origin: ${(f) => f.transformOrigin};
   backface-visibility: ${(f) => f.backfaceVisibility};
   opacity: ${(f) => f.opacity};
-  ${(f) => f.name && ie};
+  ${(f) => f.name && ce};
 `;
-function de({
+function ue({
   name: f = "shake",
   duration: _ = "2s",
   timingFunction: j = "linear",
@@ -2122,7 +2122,7 @@ function de({
   children: b = /* @__PURE__ */ Tt.jsx("h1", { children: "Hello World" })
 }) {
   return /* @__PURE__ */ Tt.jsx(
-    ce,
+    fe,
     {
       name: f,
       duration: _,
@@ -2140,5 +2140,5 @@ function de({
   );
 }
 export {
-  de as AnimateStyled
+  ue as AnimateStyled
 };
