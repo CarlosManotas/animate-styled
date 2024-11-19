@@ -218,6 +218,7 @@ export function AnimateStyled({
   backfaceVisibility = "hidden",
   opacity = 1,
   children = <h1>Hello World</h1>,
+  style,
 }: AllAnimateProps) {
   return (
     <AnimationFlow
@@ -232,6 +233,7 @@ export function AnimateStyled({
       transformOrigin={transformOrigin}
       backfaceVisibility={backfaceVisibility}
       opacity={opacity}
+      style={style}
     >
       {children}
     </AnimationFlow>

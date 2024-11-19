@@ -14,15 +14,15 @@ var wt;
 function pr() {
   if (wt) return L;
   wt = 1;
-  var f = St, _ = Symbol.for("react.element"), j = Symbol.for("react.fragment"), R = Object.prototype.hasOwnProperty, S = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, I = { key: !0, ref: !0, __self: !0, __source: !0 };
-  function E(h, u, O) {
-    var p, b = {}, w = null, z = null;
-    O !== void 0 && (w = "" + O), u.key !== void 0 && (w = "" + u.key), u.ref !== void 0 && (z = u.ref);
-    for (p in u) R.call(u, p) && !I.hasOwnProperty(p) && (b[p] = u[p]);
+  var f = St, E = Symbol.for("react.element"), j = Symbol.for("react.fragment"), O = Object.prototype.hasOwnProperty, S = f.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner, I = { key: !0, ref: !0, __self: !0, __source: !0 };
+  function w(h, u, _) {
+    var p, b = {}, R = null, z = null;
+    _ !== void 0 && (R = "" + _), u.key !== void 0 && (R = "" + u.key), u.ref !== void 0 && (z = u.ref);
+    for (p in u) O.call(u, p) && !I.hasOwnProperty(p) && (b[p] = u[p]);
     if (h && h.defaultProps) for (p in u = h.defaultProps, u) b[p] === void 0 && (b[p] = u[p]);
-    return { $$typeof: _, type: h, key: w, ref: z, props: b, _owner: S.current };
+    return { $$typeof: E, type: h, key: R, ref: z, props: b, _owner: S.current };
   }
-  return L.Fragment = j, L.jsx = E, L.jsxs = E, L;
+  return L.Fragment = j, L.jsx = w, L.jsxs = w, L;
 }
 var A = {};
 /**
@@ -37,7 +37,7 @@ var A = {};
 var kt;
 function yr() {
   return kt || (kt = 1, process.env.NODE_ENV !== "production" && function() {
-    var f = St, _ = Symbol.for("react.element"), j = Symbol.for("react.portal"), R = Symbol.for("react.fragment"), S = Symbol.for("react.strict_mode"), I = Symbol.for("react.profiler"), E = Symbol.for("react.provider"), h = Symbol.for("react.context"), u = Symbol.for("react.forward_ref"), O = Symbol.for("react.suspense"), p = Symbol.for("react.suspense_list"), b = Symbol.for("react.memo"), w = Symbol.for("react.lazy"), z = Symbol.for("react.offscreen"), tt = Symbol.iterator, It = "@@iterator";
+    var f = St, E = Symbol.for("react.element"), j = Symbol.for("react.portal"), O = Symbol.for("react.fragment"), S = Symbol.for("react.strict_mode"), I = Symbol.for("react.profiler"), w = Symbol.for("react.provider"), h = Symbol.for("react.context"), u = Symbol.for("react.forward_ref"), _ = Symbol.for("react.suspense"), p = Symbol.for("react.suspense_list"), b = Symbol.for("react.memo"), R = Symbol.for("react.lazy"), z = Symbol.for("react.offscreen"), tt = Symbol.iterator, It = "@@iterator";
     function Ct(t) {
       if (t === null || typeof t != "object")
         return null;
@@ -65,7 +65,7 @@ function yr() {
     var Yt = !1, jt = !1, Dt = !1, Xt = !1, Ft = !1, rt;
     rt = Symbol.for("react.module.reference");
     function Lt(t) {
-      return !!(typeof t == "string" || typeof t == "function" || t === R || t === I || Ft || t === S || t === O || t === p || Xt || t === z || Yt || jt || Dt || typeof t == "object" && t !== null && (t.$$typeof === w || t.$$typeof === b || t.$$typeof === E || t.$$typeof === h || t.$$typeof === u || // This needs to include all possible module reference object
+      return !!(typeof t == "string" || typeof t == "function" || t === O || t === I || Ft || t === S || t === _ || t === p || Xt || t === z || Yt || jt || Dt || typeof t == "object" && t !== null && (t.$$typeof === R || t.$$typeof === b || t.$$typeof === w || t.$$typeof === h || t.$$typeof === u || // This needs to include all possible module reference object
       // types supported by any Flight configuration anywhere since
       // we don't know which Flight build this will end up being used
       // with.
@@ -89,7 +89,7 @@ function yr() {
       if (typeof t == "string")
         return t;
       switch (t) {
-        case R:
+        case O:
           return "Fragment";
         case j:
           return "Portal";
@@ -97,7 +97,7 @@ function yr() {
           return "Profiler";
         case S:
           return "StrictMode";
-        case O:
+        case _:
           return "Suspense";
         case p:
           return "SuspenseList";
@@ -107,7 +107,7 @@ function yr() {
           case h:
             var a = t;
             return at(a) + ".Consumer";
-          case E:
+          case w:
             var e = t;
             return at(e._context) + ".Provider";
           case u:
@@ -115,7 +115,7 @@ function yr() {
           case b:
             var n = t.displayName || null;
             return n !== null ? n : x(t.type) || "Memo";
-          case w: {
+          case R: {
             var i = t, c = i._payload, s = i._init;
             try {
               return x(s(c));
@@ -293,7 +293,7 @@ function yr() {
       if (typeof t == "string")
         return $(t);
       switch (t) {
-        case O:
+        case _:
           return $("Suspense");
         case p:
           return $("SuspenseList");
@@ -304,7 +304,7 @@ function yr() {
             return Wt(t.render);
           case b:
             return W(t.type, a, e);
-          case w: {
+          case R: {
             var n = t, i = n._payload, c = n._init;
             try {
               return W(c(i), a, e);
@@ -419,7 +419,7 @@ function yr() {
     var tr = function(t, a, e, n, i, c, s) {
       var o = {
         // This tag allows us to uniquely identify this as a React Element
-        $$typeof: _,
+        $$typeof: E,
         // Built-in properties that belong on the element
         type: t,
         key: a,
@@ -474,7 +474,7 @@ function yr() {
     var G;
     G = !1;
     function H(t) {
-      return typeof t == "object" && t !== null && t.$$typeof === _;
+      return typeof t == "object" && t !== null && t.$$typeof === E;
     }
     function xt() {
       {
@@ -583,7 +583,7 @@ Check the top-level render call using <` + e + ">.");
           var y = ar();
           y ? o += y : o += xt();
           var l;
-          t === null ? l = "null" : J(t) ? l = "array" : t !== void 0 && t.$$typeof === _ ? (l = "<" + (x(t.type) || "Unknown") + " />", o = " Did you accidentally export a JSX literal instead of a component?") : l = typeof t, m("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", l, o);
+          t === null ? l = "null" : J(t) ? l = "array" : t !== void 0 && t.$$typeof === E ? (l = "<" + (x(t.type) || "Unknown") + " />", o = " Did you accidentally export a JSX literal instead of a component?") : l = typeof t, m("React.jsx: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", l, o);
         }
         var d = rr(t, a, e, i, c);
         if (d == null)
@@ -615,7 +615,7 @@ React keys must be passed directly to JSX without using spread:
   <%s key={someKey} {...props} />`, Z, T, lr, T), _t[T + Z] = !0;
           }
         }
-        return t === R ? or(d) : nr(d), d;
+        return t === O ? or(d) : nr(d), d;
       }
     }
     function sr(t, a, e) {
@@ -625,7 +625,7 @@ React keys must be passed directly to JSX without using spread:
       return Et(t, a, e, !1);
     }
     var cr = ir, fr = sr;
-    A.Fragment = R, A.jsx = cr, A.jsxs = fr;
+    A.Fragment = O, A.jsx = cr, A.jsxs = fr;
   }()), A;
 }
 process.env.NODE_ENV === "production" ? Q.exports = pr() : Q.exports = yr();
@@ -2109,32 +2109,34 @@ const gr = r`
 `;
 function ue({
   name: f = "shake",
-  duration: _ = "2s",
+  duration: E = "2s",
   timingFunction: j = "linear",
-  delay: R = "0s",
+  delay: O = "0s",
   iterationCount: S = "infinite",
   direction: I = "normal",
-  fillMode: E = "none",
+  fillMode: w = "none",
   playState: h = "running",
   transformOrigin: u = "center",
-  backfaceVisibility: O = "hidden",
+  backfaceVisibility: _ = "hidden",
   opacity: p = 1,
-  children: b = /* @__PURE__ */ Tt.jsx("h1", { children: "Hello World" })
+  children: b = /* @__PURE__ */ Tt.jsx("h1", { children: "Hello World" }),
+  style: R
 }) {
   return /* @__PURE__ */ Tt.jsx(
     fe,
     {
       name: f,
-      duration: _,
+      duration: E,
       timingFunction: j,
-      delay: R,
+      delay: O,
       iterationCount: S,
       direction: I,
-      fillMode: E,
+      fillMode: w,
       playState: h,
       transformOrigin: u,
-      backfaceVisibility: O,
+      backfaceVisibility: _,
       opacity: p,
+      style: R,
       children: b
     }
   );

@@ -46,5 +46,5 @@ interface AllAnimateProps extends AnimateStyledProps {
     style?: React.CSSProperties;
     children: React.ReactNode;
 }
-export declare function AnimateStyled({ name, duration, timingFunction, delay, iterationCount, direction, fillMode, playState, transformOrigin, backfaceVisibility, opacity, children, }: AllAnimateProps): import("react/jsx-runtime").JSX.Element;
+export declare function AnimateStyled({ name, duration, timingFunction, delay, iterationCount, direction, fillMode, playState, transformOrigin, backfaceVisibility, opacity, children, style, }: AllAnimateProps): import("react/jsx-runtime").JSX.Element;
 export {};
